@@ -4,7 +4,7 @@ hello features
 3. added in dev
 4. this line is added on github editor and local have to fetch it
 5. this line is added locally (conflict)
-(all lines added to dev by rebase (originally from QA))
+(all lines below this added to dev by rebase (originally from QA))
 ---------changes in qa starts here------------
 6. line added to move head on this commit after soft reset
 7. line where soft reset comand will run after commit.
