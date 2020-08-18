@@ -3,4 +3,9 @@ hello features
 2. this line is added later and modified.
 
 ----testing stash here-----
+<<<<<<< HEAD
 1. line added locally
+=======
+1. this line added on github
+
+>>>>>>> cb4708e16f98b53bb216346eba572070bc2a64af
