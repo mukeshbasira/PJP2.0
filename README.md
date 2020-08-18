@@ -30,12 +30,10 @@ git checkout dev
 git merge --no-ff feature
 git push origin dev
 ```
-------------------------------------------------------
-2. Task  - handling merge conflicts
+2. Task  - handling merge conflicts (dev branch)
 Now, Line 4 is added on GitHub in dev branch and new line4 added in local dev branch (in txt file) for conflict.
 ```
 git fetch
-
 ```
 conflict problem - local dev and origin dev can't be merged
 ```
@@ -44,3 +42,5 @@ cat mytext.txt
 
 ```
 To resolve a merge conflict is to edit the conflicted file and then merge changes.
+
+3. Task  - Soft and Hard reset (QA branch)
