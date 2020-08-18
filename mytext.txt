@@ -3,4 +3,8 @@ hello features
 2. this line is added later and modified.
 
 ----testing stash here-----
+<<<<<<< Updated upstream
 1. line added on github
+=======
+1. line added locally to check stash
+>>>>>>> Stashed changes
