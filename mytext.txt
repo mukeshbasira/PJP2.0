@@ -6,3 +6,4 @@ hello features
 5. this line is added locally (conflict)
 ---------changes in qa starts here------------
 6. line added to move head on this commit after soft reset
+7. line where soft reset comand will run after commit.
