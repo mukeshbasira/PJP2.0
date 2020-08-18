@@ -18,7 +18,7 @@ git checkout -b qa week1
 git checkout -b delivery week1
 
 ```
-Feature branch to dev promotion
+1. Task  - Feature branch to dev promotion
 Step 1: From your project repository, bring in the changes and test.
 ```
 git fetch origin
@@ -31,7 +31,8 @@ git merge --no-ff feature
 git push origin dev
 ```
 ------------------------------------------------------
-now, Line 4 is added on GitHub in dev branch and new line4 added in local dev branch (in txt file) for conflict.
+2. Task  - handling merge conflicts
+Now, Line 4 is added on GitHub in dev branch and new line4 added in local dev branch (in txt file) for conflict.
 ```
 git fetch
 
