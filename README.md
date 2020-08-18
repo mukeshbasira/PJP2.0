@@ -29,3 +29,8 @@ git checkout dev
 git merge --no-ff feature
 git push origin dev
 ```
+------------------------------------------------------
+now, Line 4 is added on GitHub in dev branch and local have to fetch it.
+```
+git fetch
+```
