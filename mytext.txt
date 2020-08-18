@@ -9,3 +9,4 @@ hello features
 7. line where soft reset comand will run after commit.
 8. Line 7 and 8 will be deleted after hard reset to line 6
 // git reset --hard 35c8e75 (to go to line 6)
+9. commit added after rebase in dev
