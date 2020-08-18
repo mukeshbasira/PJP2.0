@@ -46,6 +46,7 @@ To resolve a merge conflict is to edit the conflicted file and then merge change
 3. Task  - Soft and Hard reset (QA branch)
 ```
 git log
+git reflog show
 git reset --soft 35c8e75
 git reset --mixed 35c8e75
 git reset --soft 85cff85
@@ -56,4 +57,9 @@ git reset --hard 35c8e75 (will delete all changes if any after this commit)
 git stash save
 git pull
 git stash apply
+```
+5. Task - rebasing (qa branch -> dev)
+```
+git checkout dev
+git rebase -i qa
 ```
