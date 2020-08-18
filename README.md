@@ -51,3 +51,4 @@ git reset --mixed 35c8e75
 git reset --soft 85cff85
 git reset --hard 35c8e75 (will delete all changes if any after this commit)
 ```
+4. Task  - Stash local changes during conflicts (feature branch)
