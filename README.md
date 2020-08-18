@@ -44,3 +44,10 @@ cat mytext.txt
 To resolve a merge conflict is to edit the conflicted file and then merge changes.
 
 3. Task  - Soft and Hard reset (QA branch)
+```
+git log
+git reset --soft 35c8e75
+git reset --mixed 35c8e75
+git reset --soft 85cff85
+git reset --hard 35c8e75 (will delete all changes if any after this commit)
+```
