@@ -15,4 +15,17 @@ git checkout -b feature week1
 git checkout -b dev week1
 git checkout -b qa week1
 git checkout -b delivery week1
+
+```
+Step 1: From your project repository, bring in the changes and test.
+```
+ git fetch origin
+git checkout -b feature origin/feature
+git merge dev
+```
+Step 2: Merge the changes and update on GitHub.
+```
+ git checkout dev
+git merge --no-ff feature
+git push origin dev
 ```
