@@ -7,3 +7,4 @@ hello features
 ---------changes in qa starts here------------
 6. line added to move head on this commit after soft reset
 7. line where soft reset comand will run after commit.
+8. Line 7 and 8 will be deleted after hard reset to line 6
