@@ -1,0 +1,12 @@
+hello features
+1. this will be first line (first commit in feature branch)
+2. this line is added later and modified.
+3. added in dev
+4. this line is added on github editor and local have to fetch it
+5. this line is added locally (conflict)
+---------changes in qa starts here------------
+6. line added to move head on this commit after soft reset
+7. line where soft reset comand will run after commit.
+8. Line 7 and 8 will be deleted after hard reset to line 6
+// git reset --hard 35c8e75 (to go to line 6)
+9. commit added after rebase in dev
