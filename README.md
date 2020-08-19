@@ -9,6 +9,8 @@
 Assignment - [ https://github.com/mukeshbasira/PJP2.0/blob/week1/Assignment%20Question/Week%201%20Assignment.pdf (follow the link given in the pdf)
 *command line tasks can be done on local machine itself ]
 
+all changes will be made to newtext.txt , visit the specific branch and read newtext file for more insight.
+
 # week1 will act as master for all these children branches
 Commands-
 ```
