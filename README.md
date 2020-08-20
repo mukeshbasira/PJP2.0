@@ -30,7 +30,9 @@ Assignment - https://github.com/mukeshbasira/PJP2.0/blob/week1/Assignment%20Ques
 
 ## MAVEN
 link - https://github.com/mukeshbasira/PJP2.0/tree/week2_maven
+
 Assignment - https://github.com/mukeshbasira/PJP2.0/blob/week2_maven/Assignments/Assignment%20on%20Maven.pdf
+
 ### Udemy Course for maven
 1. https://www.udemy.com/course/learn-maven-java-dependency-management-in-20-steps/ 🟢
 
