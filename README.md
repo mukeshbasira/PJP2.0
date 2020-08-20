@@ -4,7 +4,8 @@
 * Page => https://github.com/mukeshbasira/PJP2.0
 
 1.[WEEK 1](#WEEK-1-BATCH-5)
-1.[WEEK 2](#WEEK-2-BATCH-5)
+
+2.[WEEK 2](#WEEK-2-BATCH-5)
 
 # WEEK 1 BATCH 5
 link - https://github.com/mukeshbasira/PJP2.0/tree/week1
