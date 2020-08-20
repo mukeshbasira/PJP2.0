@@ -11,7 +11,7 @@
 ### Udemy Courses
 1. [Git](https://www.udemy.com/course/git-going-fast/)
 
-*command line tasks can be done on local machine itself ]
+*command line tasks can be done on local machine itself
 
 All changes will be made to newtext.txt , visit the specific branch and read newtext file for more insight.
 
@@ -27,7 +27,7 @@ git checkout -b qa week1
 git checkout -b delivery week1
 
 ```
-1. Task  - Feature branch to dev promotion
+1. Task  - Feature branch to dev promotion (visit feature branch)
 Step 1: From your project repository, bring in the changes and test.
 ```
 git fetch origin
@@ -39,7 +39,7 @@ git checkout dev
 git merge --no-ff feature
 git push origin dev
 ```
-2. Task  - handling merge conflicts (dev branch)
+2. Task  - handling merge conflicts (visit dev branch)
 Now, Line 4 is added on GitHub in dev branch and new line4 added in local dev branch (in txt file) for conflict.
 ```
 git fetch
@@ -52,7 +52,7 @@ cat mytext.txt
 ```
 To resolve a merge conflict is to edit the conflicted file and then merge changes.
 
-3. Task  - Soft and Hard reset (QA branch)
+3. Task  - Soft and Hard reset (visit QA branch)
 ```
 git log
 git reflog show
@@ -61,7 +61,7 @@ git reset --mixed 35c8e75
 git reset --soft 85cff85
 git reset --hard 35c8e75 (will delete all changes if any after this commit)
 ```
-4. Task  - Stash local changes during conflicts (feature branch)
+4. Task  - Stash local changes during conflicts (visit feature branch)
 ```
 git stash save
 git pull
