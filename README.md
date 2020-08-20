@@ -29,9 +29,9 @@
 # WEEK 2 BATCH 5
 
 ## MAVEN
-- [Maven Project] https://github.com/mukeshbasira/PJP2.0/tree/week2_maven
+- [Maven Project](https://github.com/mukeshbasira/PJP2.0/tree/week2_maven)
 
-- [Maven Assignment statement] https://github.com/mukeshbasira/PJP2.0/blob/week2_maven/Assignments/Assignment%20on%20Maven.pdf
+- [Maven Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_maven/Assignments/Assignment%20on%20Maven.pdf)
 
 ### Udemy Course for maven
 1. [Maven](https://www.udemy.com/course/learn-maven-java-dependency-management-in-20-steps/ ) 
