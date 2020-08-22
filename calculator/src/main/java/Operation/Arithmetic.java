@@ -7,12 +7,12 @@ public interface Arithmetic {
 
 	void equationSolver(Date inputDate1, Date inputDate2);
 
-	public int date();
+	public Integer date();
 
-	public int week();
+	public Integer week();
 
-	public int months();
+	public Integer months();
 
-	public int years();
+	public Integer years();
 
 }

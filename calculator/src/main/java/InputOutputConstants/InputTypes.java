@@ -1,42 +1,70 @@
 package InputOutputConstants;
 
-public class InputTypes implements StandardInOut {
+import java.util.Arrays;
+import java.util.List;
+import java.util.Optional;
+import java.util.Scanner;
 
-	public static final String WELCOME_MESSAGE = "Hello, welcome to the calculator App.";
+public class InputTypes implements StandardIn {
 
-	public static final String SUB_TWO_DATES_MESSAGE = "You can subtract two dates.";
-	public static final String DAY_OF_THE_WEEK = "Determine the Day of the Week for a given date";
-	public static final String DETERMINE_THE_WEEK_NUMBER = " Determine the Week number for a given a date";
-	public static final String N_DATES_MESSAGE = "Add, Subtract 'n' Days, Months, Weeks to the given date";
-	public static final String FORMAT_MESSAGE = "If you want to enter date enter it in MM/DD/YYYY format or just type a string as mentioned in example";
-	public static final String DESIGN = "********************************************\n";
 
-	public static final String CALC_STRING = "***************CALCUALTOR*******************\n";
-	public static final String EXAMPLE = "--------------EXAMPLES ------------ ";
-	public static final String EXAMPLE_MESSAGE1 = " Input first date as 10/02/1990  and second as 1/02/1990 ";
-	public static final String HELP_LINK_STRING = "FOR MORE EXAMPLES visit http://natty.joestelmach.com/doc.jsp";
-	public static final String EXAMPLE_MESSAGE2 = " Input first date as 10/02/1990  and second Date as string \"5 days from now \" ";
-	public static final String OPTIONS1 = "Type First Date or String";
-	public static final String OPTIONS2 = "Type Second Date or String";
+	public static final String OPTIONS1 = "Type First Date(MM/DD/YYYY)/String or String";
+	public static final String OPTIONS2 = "for option 1 Type Second Date(MM/DD/YYYY)/string OR for option 2 type N days or N weeks";
+
+
+
+	private Optional<String> date1;
+
+	private Optional<String> date2;
+
+
+
+
 
 
 	@Override
-	public void UserIO() {
-		System.out.println(DESIGN);
-		System.out.println(CALC_STRING);
-		System.out.println(DESIGN);
-		System.out.println(WELCOME_MESSAGE);
-		System.out.println("1." + SUB_TWO_DATES_MESSAGE);
-		System.out.println("2." + N_DATES_MESSAGE);
-		System.out.println("3." + DAY_OF_THE_WEEK);
-		System.out.println("4." + DETERMINE_THE_WEEK_NUMBER);
-		System.out.println(FORMAT_MESSAGE);
-		System.out.println(EXAMPLE);
-		System.out.println(EXAMPLE_MESSAGE1);
-		System.out.println(EXAMPLE_MESSAGE2);
-		System.out.println("!!!!!!!!!!     " + HELP_LINK_STRING + "     !!!!!!!!!!");
-		System.out.println(DESIGN);
+	public List<Optional<String>> UserTwoDateInput(String message1, String message2) {
+		System.out.println(message1);
+		try (Scanner input = new Scanner(System.in)) {
+			date1 = Optional.of(input.nextLine());
+
+			System.out.println(message2);
+
+			date2 = Optional.of(input.nextLine());
+		}
+
+		return Arrays.asList(date1, date2);
+
 	}
+
+
+
+	@Override
+	public Optional<Integer> userIntegerInput() {
+		try (Scanner input = new Scanner(System.in)) {
+			Optional<Integer> optionInteger = Optional.of(input.nextInt());
+			return optionInteger;
+		}
+
+	}
+
+	@Override
+	public Optional<String> UserInputString(String message1) {
+		System.out.println(message1);
+		try (Scanner input = new Scanner(System.in)) {
+			date1 = Optional.of(input.next());
+		}
+
+		return date1;
+
+	}
+
+
+
+
+
+
+
 
 
 

@@ -15,27 +15,28 @@ public class Subtraction implements Arithmetic {
 	private LocalDate date2;
 	private Period period;
 
+
 	@Override
-	public int date() {
+	public Integer date() {
 		return Math.abs(period.getDays() % 7);
 
 	}
 
 	@Override
-	public int week() {
+	public Integer week() {
 		return Math.abs(period.getDays() / 7);
 
 
 	}
 
 	@Override
-	public int months() {
+	public Integer months() {
 		return Math.abs(period.getMonths());
 
 	}
 
 	@Override
-	public int years() {
+	public Integer years() {
 		return Math.abs(period.getYears());
 
 	}
@@ -47,6 +48,8 @@ public class Subtraction implements Arithmetic {
 		date2 = LocalDate.ofInstant(inputDate2.toInstant(), ZoneId.systemDefault());
 		period = Period.between(date1, date2);
 
+
 	}
+
 
 }
