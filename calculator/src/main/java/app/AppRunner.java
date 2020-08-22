@@ -41,16 +41,12 @@ public class AppRunner {
 
 
 			arithmetic = new Subtraction();
+
+
+
 			arithmetic.equationSolver(date1Parsed.get(), date2Parsed.get());
-			standardInOut = new OutputConstants(arithmetic.dateDifferece(),
-					arithmetic.weekDifferece(),
-					arithmetic.monthsDifferece(), arithmetic.yearsDifferece());
+			standardInOut = new OutputConstants(arithmetic);
 			standardInOut.UserIO();
-
-
-
-
-
 
 		} else {
 			System.out.println(OutputConstants.DATE_PARSER_ERROR + "your inputs were -> " + date1 + " " + date2);

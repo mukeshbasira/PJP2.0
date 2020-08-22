@@ -1,6 +1,8 @@
 package Operation;
 
-import java.util.Calendar;
+import java.time.LocalDate;
+import java.time.Period;
+import java.time.ZoneId;
 import java.util.Date;
 
 public class Subtraction implements Arithmetic {
@@ -8,41 +10,42 @@ public class Subtraction implements Arithmetic {
 	//	private float weeks;
 	//	private float years;
 	//	private float months;
-	Calendar calendar1 = Calendar.getInstance();
-	Calendar calendar2 = Calendar.getInstance();
-	private float difference;
 
+	private LocalDate date1;
+	private LocalDate date2;
+	private Period period;
 
 	@Override
-	public int dateDifferece() {
-		return (int) ((difference + 10) / (1000 * 60 * 60 * 24));
+	public int date() {
+		return Math.abs(period.getDays() % 7);
 
 	}
 
 	@Override
-	public int weekDifferece() {
-		return (int) ((difference + 10) / (1000 * 60 * 60 * 24 * 7));
+	public int week() {
+		return Math.abs(period.getDays() / 7);
 
 
 	}
 
 	@Override
-	public int monthsDifferece() {
-		return (int) ((difference + 10) / (1000 * 60 * 60 * 24 * 12));
+	public int months() {
+		return Math.abs(period.getMonths());
 
 	}
 
 	@Override
-	public int yearsDifferece() {
-		return (int) ((difference + 10) / (1000 * 60 * 60 * 24 * 365));
+	public int years() {
+		return Math.abs(period.getYears());
 
 	}
 
 
 	@Override
 	public void equationSolver(Date inputDate1, Date inputDate2) {
-
-		this.difference = inputDate1.getTime() - inputDate2.getTime();
+		date1 = LocalDate.ofInstant(inputDate1.toInstant(), ZoneId.systemDefault());
+		date2 = LocalDate.ofInstant(inputDate2.toInstant(), ZoneId.systemDefault());
+		period = Period.between(date1, date2);
 
 	}
 

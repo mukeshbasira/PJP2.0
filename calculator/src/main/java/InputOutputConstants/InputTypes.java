@@ -13,9 +13,9 @@ public class InputTypes implements StandardInOut {
 
 	public static final String CALC_STRING = "***************CALCUALTOR*******************\n";
 	public static final String EXAMPLE = "--------------EXAMPLES ------------ ";
-	public static final String EXAMPLE_MESSAGE1 = " Input first date as 15/02/1990  and second as 18/02/1990 ";
+	public static final String EXAMPLE_MESSAGE1 = " Input first date as 10/02/1990  and second as 1/02/1990 ";
 	public static final String HELP_LINK_STRING = "FOR MORE EXAMPLES visit http://natty.joestelmach.com/doc.jsp";
-	public static final String EXAMPLE_MESSAGE2 = " Input first date as 15/02/1990  and second Date as string \"5 days from now \" ";
+	public static final String EXAMPLE_MESSAGE2 = " Input first date as 10/02/1990  and second Date as string \"5 days from now \" ";
 	public static final String OPTIONS1 = "Type First Date or String";
 	public static final String OPTIONS2 = "Type Second Date or String";
 
@@ -30,6 +30,7 @@ public class InputTypes implements StandardInOut {
 		System.out.println("2." + N_DATES_MESSAGE);
 		System.out.println("3." + DAY_OF_THE_WEEK);
 		System.out.println("4." + DETERMINE_THE_WEEK_NUMBER);
+		System.out.println(FORMAT_MESSAGE);
 		System.out.println(EXAMPLE);
 		System.out.println(EXAMPLE_MESSAGE1);
 		System.out.println(EXAMPLE_MESSAGE2);
