@@ -35,7 +35,7 @@ public class AppRunner {
 			Optional<Date> dateParsed = StringtoDateParser.parser(userSingleInput.orElse(""));
 
 			dateParsed.ifPresentOrElse(value -> {
-				System.out.println(value);
+				System.out.println("Found Date is ->>> " + value);
 			}, () -> {
 				System.out.println("NO DATE FOUND");
 			});
@@ -55,7 +55,7 @@ public class AppRunner {
 					arithmetic.equationSolver(date1Parsed.get(), date2Parsed.get());
 
 					standardOut = new OutputConstants(arithmetic);
-					standardOut.UserOut();
+					standardOut.UserOut("Difference between two dates is  ");
 
 				} else if (valueInteger == 2) {
 					Optional<String> userSingleInput = standardIn.UserInputString(
@@ -66,8 +66,16 @@ public class AppRunner {
 
 					arithmetic.equationSolver(date1Parsed.get(), date2Parsed.get());
 
-					standardOut = new OutputConstants(arithmetic);
-					standardOut.UserOut();
+					//					standardOut = new OutputConstants(arithmetic);
+					//					standardOut.UserOut("After applying " + userIntegerInput.get() + " operation result is");
+					Optional<Date> dateParsed = StringtoDateParser
+							.parser(arithmetic.months() + "/" + arithmetic.date() + "/" + arithmetic.years());
+
+					dateParsed.ifPresentOrElse(value -> {
+						System.out.println("Concluded Date is ->>> " + value);
+					}, () -> {
+						System.out.println("NO DATE FOUND");
+					});
 
 				}
 

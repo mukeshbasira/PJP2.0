@@ -18,6 +18,11 @@ public class NOperation implements Arithmetic {
 	Integer weeksInteger;
 	Integer yearsInteger;
 	LocalDate date1;
+
+	public LocalDate getDate1() {
+		return date1;
+	}
+
 	LocalDate date2;
 	Period period;
 
@@ -40,20 +45,20 @@ public class NOperation implements Arithmetic {
 		LocalDate today = LocalDate.now();
 		period = Period.between(today, date2);
 
+		System.out.println("Trying operation " + operString);
+
 
 
 		if (operString.contains("Addition")) {
 
-			period  = Period.of(period.getYears(), period.getMonths(), period.getDays());
 			date1 = date1.plus(period);
-			System.out.println(date1);
+			System.out.println("Addition operation completed : " + date1);
 
 		} else if (operString.contains("Subtraction")) {
-			period = Period.of(-1 * period.getYears(), -1 * period.getMonths(),
-					-1 * period.getDays());
+
 			date1 = date1.minus(period);
 
-			System.out.println(date1);
+			System.out.println("Subtracted operation completed : " + date1);
 
 
 		}

@@ -70,8 +70,8 @@ public class OutputConstants implements StandardOut {
 
 
 	@Override
-	public void UserOut() {
-		System.out.println(year + YEAR_DIFF + months + MONTHS_DIFF + weeks + WEEK_DIFF + days + DAYS_DIFF);
+	public void UserOut(String meString) {
+		System.out.println(meString + year + YEAR_DIFF + months + MONTHS_DIFF + weeks + WEEK_DIFF + days + DAYS_DIFF);
 
 	}
 

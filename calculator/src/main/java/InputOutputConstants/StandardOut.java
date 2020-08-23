@@ -6,6 +6,6 @@ public interface StandardOut {
 
 	void UserIOTypes();
 
-	void UserOut();
+	void UserOut(String string);
 
 }
