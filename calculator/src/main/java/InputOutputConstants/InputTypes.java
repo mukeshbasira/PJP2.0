@@ -1,6 +1,7 @@
 package InputOutputConstants;
 
 import java.util.Arrays;
+import java.util.InputMismatchException;
 import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
@@ -46,7 +47,15 @@ public class InputTypes implements StandardIn {
 	public Optional<Integer> userIntegerInput() {
 		input = new Scanner(System.in);
 
-		Optional<Integer> optionInteger = Optional.of(input.nextInt());
+		Optional<Integer> optionInteger = null;
+		try {
+			optionInteger = Optional.of(input.nextInt());
+		} catch (InputMismatchException e) {
+			System.out.println("NOT VALID OPTION ERROR"); // TODO Auto-generated catch block
+			e.printStackTrace();
+		} finally {
+			input.close();
+		}
 		return optionInteger;
 
 

@@ -65,9 +65,6 @@ public class AppRunner {
 					arithmetic = new NOperation(userSingleInput.orElse("Subtraction"));
 
 					arithmetic.equationSolver(date1Parsed.get(), date2Parsed.get());
-
-					//					standardOut = new OutputConstants(arithmetic);
-					//					standardOut.UserOut("After applying " + userIntegerInput.get() + " operation result is");
 					Optional<Date> dateParsed = StringtoDateParser
 							.parser(arithmetic.months() + "/" + arithmetic.date() + "/" + arithmetic.years());
 
