@@ -34,6 +34,8 @@ public class Output {
 		System.out.println("2." + OutConstants.N_DATES_MESSAGEADD);
 		System.out.println("3." + OutConstants.SIMPLE_DATE_STRING);
 		System.out.println("4." + OutConstants.N_DATES_MESSAGESUB);
+		System.out.println("5." + OutConstants.SHOWSESSION);
+		System.out.println("6." + OutConstants.SAVETOCSV);
 		// System.out.println("4." + DETERMINE_THE_WEEK_NUMBER);
 	}
 

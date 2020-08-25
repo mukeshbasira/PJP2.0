@@ -17,29 +17,17 @@ public class ToSerialize implements History {
 	localStructure localStructure;
 
 	private ArrayList<Structure.localStructure> readObject = new ArrayList<localStructure>();
-	@Override
-	public void addSession(localStructure localStructure) {
-
-		sessionList.add(localStructure);
-
-	}
 
 	@Override
 	public void save(String fileLocationString) throws Exception {
-		if (show(fileLocationString) != null) {
-			ArrayList<Structure.localStructure> readObject = show(fileLocationString);
+		//		if (show(fileLocationString) != null) {
+		//			ArrayList<Structure.localStructure> readObject = show(fileLocationString);
+		//
+		//			sessionList.addAll(readObject);
+		//
+		//		}
 
-			sessionList.addAll(readObject);
-			Integer count = 1;
-
-			for (localStructure localStructure : sessionList) {
-				print(localStructure, count++);
-
-			}
-
-		}
-
-		FileOutputStream outputStream = new FileOutputStream(new File(fileLocationString));
+		FileOutputStream outputStream = new FileOutputStream(new File(fileLocationString), true);
 		try (ObjectOutputStream objectOutputStream = new ObjectOutputStream(outputStream)) {
 
 			objectOutputStream.writeObject(sessionList.size());
@@ -47,8 +35,8 @@ public class ToSerialize implements History {
 				objectOutputStream.writeObject(s);
 			}
 
-
 		}
+		print(sessionList);
 
 		System.out.println("SAVED!!!");
 
@@ -61,40 +49,55 @@ public class ToSerialize implements History {
 	public ArrayList<localStructure> show(
 			String fileLocationString)
 					throws FileNotFoundException, IOException, Exception {
-		FileInputStream fileInputStream = new FileInputStream(new File(fileLocationString));
+		File file = new File(fileLocationString);
+		if (file.exists()) {
+			FileInputStream fileInputStream = new FileInputStream(new File(fileLocationString));
 
-		try (ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream)) {
-
-
-
-			Integer count = (Integer) objectInputStream.readObject();
-			System.out.println(count);
-
-			for (int i = 1; i <= count; i++) {
+			try (ObjectInputStream objectInputStream = new ObjectInputStream(fileInputStream)) {
 
 
-				localStructure = (Structure.localStructure) objectInputStream.readObject();
 
-				readObject.add(localStructure);
+				Integer count = (Integer) objectInputStream.readObject();
+				System.out.println(count);
 
+				for (int i = 1; i <= count; i++) {
+
+
+					localStructure = (Structure.localStructure) objectInputStream.readObject();
+
+					readObject.add(localStructure);
+
+
+				}
 
 			}
-
-
+			return readObject;
 		}
-		return readObject;
+		return null;
 
 	}
 
-	private void print(localStructure localStructure, Integer count) {
-		System.out.println("---------------Entry number--" + count + "-------------");
-		System.out.println(" Option selected - " + localStructure.getOption());
-		System.out.println("option phrase  was - " + localStructure.getOptionSelectedString());
+	private void print(ArrayList<localStructure> list) {
 
-		System.out.println("operation was - " + localStructure.getSelectedString());
-		System.out.println("User First input was - " + localStructure.getUserFirstDateString());
-		System.out.println("User Second input was - " + localStructure.getUserSecondDateString());
-		System.out.println("Output was - " + localStructure.getResult());
+		Integer count = 1;
+		for (localStructure localStructure : list) {
+
+			System.out.println("---------------Entry number--" + count++ + "-------------");
+			System.out.println(" Option selected - " + localStructure.getOption());
+			System.out.println("option phrase  was - " + localStructure.getOptionSelectedString());
+
+			System.out.println("operation was - " + localStructure.getSelectedString());
+			System.out.println("User First input was - " + localStructure.getUserFirstDateString());
+			System.out.println("User Second input was - " + localStructure.getUserSecondDateString());
+			System.out.println("Output was - " + localStructure.getResult());
+		}
 
 	}
+
+	@Override
+	public void addSession(ArrayList<Structure.localStructure> localStructure) {
+		this.sessionList = localStructure;
+
+	}
+
 }

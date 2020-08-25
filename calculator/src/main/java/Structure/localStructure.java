@@ -15,12 +15,14 @@ public class localStructure implements Serializable {
 	private String userSecondDateString;
 	private String result;
 
-	public int getOption() {
-		return option;
-	}
+
 
 	public void setOption(int option) {
 		this.option = option;
+	}
+
+	public Integer getOption() {
+		return this.option;
 	}
 
 
