@@ -9,10 +9,11 @@ import java.util.Optional;
 import com.joestelmach.natty.DateGroup;
 import com.joestelmach.natty.Parser;
 
-public class StringtoDateParser {
+public class StringtoDateParser implements StringParser {
 	static Parser parser = new Parser();
 
-	public static Optional<Date> parser(String input) {
+	@Override
+	public Optional<Date> parser(String input) {
 
 		List<DateGroup> parse = parser.parse(input);
 

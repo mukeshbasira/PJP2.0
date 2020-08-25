@@ -1,4 +1,4 @@
-package InputOutputConstants;
+package inputOutput;
 
 import java.util.Arrays;
 import java.util.InputMismatchException;
@@ -6,11 +6,10 @@ import java.util.List;
 import java.util.Optional;
 import java.util.Scanner;
 
-public class InputTypes implements StandardIn {
+public class InputTypes {
 
 
-	public static final String OPTIONS1 = "Type First Date(MM/DD/YYYY)/String or String";
-	public static final String OPTIONS2 = "for option 1 to subtract Type Second Date(MM/DD/YYYY)/string OR for option 2 type N days or N weeks";
+
 
 
 	private Optional<String> date1;
@@ -18,12 +17,6 @@ public class InputTypes implements StandardIn {
 	private Optional<String> date2;
 	private Scanner input;
 
-
-
-
-
-
-	@Override
 	public List<Optional<String>> UserTwoDateInput(String message1, String message2) {
 		System.out.println(message1);
 		input = new Scanner(System.in);
@@ -43,7 +36,7 @@ public class InputTypes implements StandardIn {
 
 
 
-	@Override
+
 	public Optional<Integer> userIntegerInput() {
 		input = new Scanner(System.in);
 
@@ -53,15 +46,13 @@ public class InputTypes implements StandardIn {
 		} catch (InputMismatchException e) {
 			System.out.println("NOT VALID OPTION ERROR"); // TODO Auto-generated catch block
 			e.printStackTrace();
-		} finally {
-			input.close();
 		}
 		return optionInteger;
 
 
 	}
 
-	@Override
+
 	public Optional<String> UserInputString(String message1) {
 		System.out.println(message1);
 		input = new Scanner(System.in);
@@ -72,15 +63,6 @@ public class InputTypes implements StandardIn {
 		return date1;
 
 	}
-
-
-
-
-
-
-
-
-
 
 
 }
