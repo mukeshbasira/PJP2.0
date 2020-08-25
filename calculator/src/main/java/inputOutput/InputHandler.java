@@ -109,15 +109,17 @@ public class InputHandler {
 				standardOut = new Output(arithmetic);
 				returnResultString = standardOut.UserOut("Difference between two dates is -> ");
 
-				sessionList.add(new localStructure(optionIntegerTHREE, "Subtraction",
+				sessionList.add(new localStructure(optionIntegerONE,
+						"Subtraction",
 						OutConstants.SUB_TWO_DATES_MESSAGE,
 						date1,
 						date2, returnResultString
 						));
 			} else {
 				System.out.println("NO DATE FOUND");
-				sessionList.add(new localStructure(optionIntegerTHREE, "Subtraction", OutConstants.SUB_TWO_DATES_MESSAGE,
-						date1, date2, "ERROR"));
+				sessionList.add(new localStructure(optionIntegerONE, "Subtraction",
+						OutConstants.SUB_TWO_DATES_MESSAGE,
+						date1, date2, "NO DATE FOUND"));
 
 			}
 			//			saveIt();
@@ -148,13 +150,15 @@ public class InputHandler {
 					returnResultString = "NO DATE FOUND";
 				});
 
-				sessionList.add(new localStructure(optionIntegerTHREE, "Addition", OutConstants.OPTIONSNDAYSADD,
+				sessionList.add(new localStructure(optionIntegerTWO, "Addition",
+						OutConstants.OPTIONSNDAYSADD,
 						date1,
 						date2,
 						returnResultString));
 			}else {
 				System.out.println("NO DATE FOUND");
-				sessionList.add(new localStructure(optionIntegerTHREE, "Addition", OutConstants.OPTIONSNDAYSADD,
+				sessionList.add(new localStructure(optionIntegerTWO, "Addition",
+						OutConstants.OPTIONSNDAYSADD,
 						date1,
 						date2,
 						"NO DATE FOUND"));
@@ -191,12 +195,14 @@ public class InputHandler {
 					returnResultString = "NO DATE FOUND";
 				});
 
-				sessionList.add(new localStructure(optionIntegerTHREE, "Subtraction",
+				sessionList.add(new localStructure(optionIntegerFOUR,
+						"Subtraction",
 						OutConstants.OPTIONSNDAYSADD,
 						date1, date2, returnResultString));
 			} else {
 				System.out.println("NO DATE FOUND");
-				sessionList.add(new localStructure(optionIntegerTHREE, "Subtraction", OutConstants.OPTIONSNDAYSADD, date1,
+				sessionList.add(new localStructure(optionIntegerFOUR, "Subtraction", OutConstants.OPTIONSNDAYSADD,
+						date1,
 						date2, "NO DATE FOUND"));
 			}
 			//			saveIt() ;

@@ -5,6 +5,11 @@
 Completed  -  
 ********************************************
 
+
+***************CALCUALTOR*******************
+
+********************************************
+
 Hello, welcome to the calculator App.
 If you want to enter date enter it in MM/DD/YYYY format or just type a phrase as mentioned in example
 --------------EXAMPLES ------------
@@ -18,6 +23,7 @@ If you want to enter date enter it in MM/DD/YYYY format or just type a phrase as
 5.show all session history
 6.SAVE to CSV
 7. Determine the Week number for a given a date
+8.SAVE and EXIT
 * [Main Project](https://github.com/mukeshbasira/PJP2.0)
 
 
