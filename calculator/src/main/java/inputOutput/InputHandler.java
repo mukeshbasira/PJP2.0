@@ -1,6 +1,7 @@
 package inputOutput;
 
 import java.util.ArrayList;
+import java.util.Calendar;
 import java.util.Date;
 import java.util.List;
 import java.util.Optional;
@@ -26,6 +27,7 @@ public class InputHandler {
 	public static final int optionIntegerFOUR = 4;
 	public static final int optionIntegerFIVE = 5;
 	public static final int optionIntegerSIX = 6;
+	public static final int optionIntegerSEVEN = 7;
 	Optional<Date> date1Parsed;
 	Optional<Date> date2Parsed;
 	History history;
@@ -109,11 +111,11 @@ public class InputHandler {
 						date1,
 						date2, returnResultString
 						));
-		} else {
-			sessionList.add(new localStructure(optionIntegerTHREE, "Subtraction", OutConstants.SUB_TWO_DATES_MESSAGE,
-					date1, date2, "ERROR"));
+			} else {
+				sessionList.add(new localStructure(optionIntegerTHREE, "Subtraction", OutConstants.SUB_TWO_DATES_MESSAGE,
+						date1, date2, "ERROR"));
 
-		}
+			}
 			saveIt();
 
 			return returnResultString;
@@ -208,6 +210,33 @@ public class InputHandler {
 			setSession(new ToCsv());
 			history.addSession(sessionList);
 			history.show("save.csv");
+		case optionIntegerSEVEN:
+			Optional<String> userInput = standardIn.UserInputString(OutConstants.DETERMINE_THE_WEEK_NUMBER);
+			Optional<Date> userInputDateParsed = stringParser.parser(userInput.orElse(""));
+
+			userInputDateParsed.ifPresentOrElse(value -> {
+				System.out.println("Found Date is ->>> " + value);
+				Calendar cal = Calendar.getInstance();
+				cal.setTime(value);
+				Integer week = cal.get(Calendar.WEEK_OF_YEAR);
+				System.out.println("WEEK FOUND " + week);
+
+				returnResultString = week.toString();
+			}, () -> {
+				System.out.println("NO WEEK FOUND");
+				returnResultString = "WEEK NOT FOUND";
+
+			});
+
+
+			sessionList.add(new localStructure(optionIntegerSEVEN, "NONE",
+					OutConstants.DETERMINE_THE_WEEK_NUMBER,
+					userInput.orElse(""), "", returnResultString));
+
+			saveIt();
+			return returnResultString;
+
+
 
 
 		default:
