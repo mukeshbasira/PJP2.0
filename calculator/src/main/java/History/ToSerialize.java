@@ -20,7 +20,8 @@ public class ToSerialize implements History {
 
 	@Override
 	public void save(String fileLocationString) throws Exception {
-		//		if (show(fileLocationString) != null) {
+		File file = new File(fileLocationString);
+		//		if (file.exists() && show(fileLocationString) != null) {
 		//			ArrayList<Structure.localStructure> readObject = show(fileLocationString);
 		//
 		//			sessionList.addAll(readObject);

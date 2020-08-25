@@ -28,6 +28,7 @@ public class OutConstants {
 	public static final String ASK_USER_INPUT_INTEGER = "Choose one of the  option -> Type 1 or 2 or .. ";
 	public static final String SHOWSESSION = "show all session history";
 	public static final String SAVETOCSV = "SAVE to CSV";
+	public static final String EXIT = "SAVE and EXIT";
 
 
 }

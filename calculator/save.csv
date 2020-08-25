@@ -1,4 +1,16 @@
 option,optionSelectedString,selectedString , userFirstDateString, userSecondDateString, result
 3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,rr,rr,ERROR
-3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,r,t,ERROR
-7, Determine the Week number for a given a date,NONE,today,,35
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,rr,rr,ERROR
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,rr,rr,ERROR
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,today,today,Difference between two dates is -> 0.0 YEAR  0.0 MONTHS  0.0 WEEK  0.0 DAYS  
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,today,today,Difference between two dates is -> 0.0 YEAR  0.0 MONTHS  0.0 WEEK  0.0 DAYS  
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,today,error,ERROR
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,today,today,Difference between two dates is -> 0.0 YEAR  0.0 MONTHS  0.0 WEEK  0.0 DAYS  
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,today,today,Difference between two dates is -> 0.0 YEAR  0.0 MONTHS  0.0 WEEK  0.0 DAYS  
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,today,today,Difference between two dates is -> 0.0 YEAR  0.0 MONTHS  0.0 WEEK  0.0 DAYS  
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,today,today,Difference between two dates is -> 0.0 YEAR  0.0 MONTHS  0.0 WEEK  0.0 DAYS  
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,ww,ww,ERROR
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,today,today,Difference between two dates is -> 0.0 YEAR  0.0 MONTHS  0.0 WEEK  0.0 DAYS  
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,today,today,Difference between two dates is -> 0.0 YEAR  0.0 MONTHS  0.0 WEEK  0.0 DAYS  
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,today,today,Difference between two dates is -> 0.0 YEAR  0.0 MONTHS  0.0 WEEK  0.0 DAYS  
+3,You can subtract two dates(as phrase or as specified US date format).,Subtraction,today,today,Difference between two dates is -> 0.0 YEAR  0.0 MONTHS  0.0 WEEK  0.0 DAYS  

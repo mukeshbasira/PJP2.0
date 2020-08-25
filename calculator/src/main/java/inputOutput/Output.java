@@ -37,6 +37,8 @@ public class Output {
 		System.out.println("5." + OutConstants.SHOWSESSION);
 		System.out.println("6." + OutConstants.SAVETOCSV);
 		System.out.println("7." + OutConstants.DETERMINE_THE_WEEK_NUMBER);
+		System.out.println("8." + OutConstants.EXIT);
+
 		// System.out.println("4." + DETERMINE_THE_WEEK_NUMBER);
 	}
 

@@ -12,16 +12,24 @@ public class AppRunner {
 	public static void main(String[] args) throws Exception {
 
 
-
-		standardOut = new Output();
-		standardOut.mainOutput();
 		InputHandler inputHandler = new InputHandler();
 
-		inputHandler.takeUserIntegerInput();
+		standardOut = new Output();
+		while(true) {
+			standardOut.mainOutput();
 
-
-
+			if(inputHandler.takeUserIntegerInput()=="EXIT")
+			{
+				break;
+			}
+			Thread.sleep(1000);
+		}
 
 	}
+
+
+
+
+
 
 }

@@ -28,6 +28,8 @@ public class InputHandler {
 	public static final int optionIntegerFIVE = 5;
 	public static final int optionIntegerSIX = 6;
 	public static final int optionIntegerSEVEN = 7;
+	public static final int optionIntegerEIGHT = 8;
+
 	Optional<Date> date1Parsed;
 	Optional<Date> date2Parsed;
 	History history;
@@ -57,9 +59,10 @@ public class InputHandler {
 		this.history = history;
 	}
 
-	public void takeUserIntegerInput() throws Exception {
+	public String takeUserIntegerInput() throws Exception {
 		Optional<Integer> userIntegerInput = standardIn.userIntegerInput();
-		IntegerHandler(userIntegerInput.orElse(1));
+		System.out.println("option selected is ->" + userIntegerInput.get());
+		return IntegerHandler(userIntegerInput.get());
 
 	}
 
@@ -86,7 +89,7 @@ public class InputHandler {
 							.orElse(""),
 							"",
 							returnResultString));
-			saveIt();
+			//			saveIt();
 			return returnResultString;
 
 		case optionIntegerONE:
@@ -112,11 +115,12 @@ public class InputHandler {
 						date2, returnResultString
 						));
 			} else {
+				System.out.println("NO DATE FOUND");
 				sessionList.add(new localStructure(optionIntegerTHREE, "Subtraction", OutConstants.SUB_TWO_DATES_MESSAGE,
 						date1, date2, "ERROR"));
 
 			}
-			saveIt();
+			//			saveIt();
 
 			return returnResultString;
 
@@ -149,6 +153,7 @@ public class InputHandler {
 						date2,
 						returnResultString));
 			}else {
+				System.out.println("NO DATE FOUND");
 				sessionList.add(new localStructure(optionIntegerTHREE, "Addition", OutConstants.OPTIONSNDAYSADD,
 						date1,
 						date2,
@@ -158,7 +163,7 @@ public class InputHandler {
 
 
 
-			saveIt();
+			//			saveIt();
 
 			return returnResultString;
 		case optionIntegerFOUR:
@@ -190,10 +195,11 @@ public class InputHandler {
 						OutConstants.OPTIONSNDAYSADD,
 						date1, date2, returnResultString));
 			} else {
+				System.out.println("NO DATE FOUND");
 				sessionList.add(new localStructure(optionIntegerTHREE, "Subtraction", OutConstants.OPTIONSNDAYSADD, date1,
 						date2, "NO DATE FOUND"));
 			}
-			saveIt() ;
+			//			saveIt() ;
 
 			return returnResultString;
 
@@ -202,14 +208,17 @@ public class InputHandler {
 		case optionIntegerFIVE:
 			setSession(new ToSerialize());
 			history.addSession(sessionList);
-			history.show("save.ser");
+			history.save("save.ser");
+
+			return "DONE";
 
 
 
 		case optionIntegerSIX:
 			setSession(new ToCsv());
 			history.addSession(sessionList);
-			history.show("save.csv");
+			history.save("save.csv");
+			return "DONE";
 		case optionIntegerSEVEN:
 			Optional<String> userInput = standardIn.UserInputString(OutConstants.DETERMINE_THE_WEEK_NUMBER);
 			Optional<Date> userInputDateParsed = stringParser.parser(userInput.orElse(""));
@@ -233,8 +242,13 @@ public class InputHandler {
 					OutConstants.DETERMINE_THE_WEEK_NUMBER,
 					userInput.orElse(""), "", returnResultString));
 
-			saveIt();
+			//			saveIt();
 			return returnResultString;
+		case optionIntegerEIGHT:
+			saveIt();
+
+			return "EXIT";
+
 
 
 
@@ -244,7 +258,7 @@ public class InputHandler {
 			System.out.println("\"Entered Integer is not valid\"");
 
 			sessionList.add(new localStructure(0, "ERROR", "", "", "", ""));
-			saveIt() ;
+			//			saveIt() ;
 			return "\"Entered Integer is not valid\\";
 
 		}
