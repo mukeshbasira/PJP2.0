@@ -20,6 +20,10 @@ public class StringtoDateParser implements StringParser {
 		if (parse.isEmpty()) {
 			return Optional.empty();
 		}
+		//		for (DateGroup dateGroup : parse) {
+		//			System.out.println(dateGroup.getDates().toString());
+		//
+		//		}
 		Optional<Date> date = Optional.of(parse.get(0).getDates().get(0));
 		return date;
 

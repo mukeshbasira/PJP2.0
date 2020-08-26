@@ -78,4 +78,18 @@ public class localStructure implements Serializable {
 		this.optionSelectedString = optionSelectedString;
 	}
 
+	@Override
+	public String toString() {
+		return " Option selected - " + getOption() +
+				"\n option phrase  was - " + getOptionSelectedString()+
+
+				"\n operation was - " + getSelectedString()+
+				"\n User First input was - " + getUserFirstDateString()+
+				"\n User Second input was - " + getUserSecondDateString()+
+				"\n Output was - " + getResult();
+
+
+
+	}
+
 }

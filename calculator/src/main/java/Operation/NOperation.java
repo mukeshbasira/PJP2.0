@@ -34,8 +34,6 @@ public class NOperation implements Arithmetic {
 	}
 
 
-
-
 	@Override
 	public void equationSolver(Date inputDate1, Date inputDate2) {
 
@@ -45,20 +43,22 @@ public class NOperation implements Arithmetic {
 		LocalDate today = LocalDate.now();
 		period = Period.between(today, date2);
 
-		System.out.println("Trying operation " + operString);
+		// System.out.println("Trying operation " + operString);
 
 
 
 		if (operString.contains("Addition")) {
+			// System.out.println(period);
 
 			date1 = date1.plus(period);
-			System.out.println("Addition operation completed : " + date1);
+			// System.out.println("Addition operation completed : " + date1);
 
 		} else if (operString.contains("Subtraction")) {
+			// System.out.println(period);
 
 			date1 = date1.minus(period);
 
-			System.out.println("Subtracted operation completed : " + date1);
+			// System.out.println("Subtracted operation completed : " + date1);
 
 
 		}

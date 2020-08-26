@@ -15,6 +15,7 @@ import Operation.Arithmetic;
 import Operation.NOperation;
 import Operation.Subtraction;
 import Structure.localStructure;
+import dataGenerator.fakeApi;
 
 public class InputHandler {
 	private static String date1 = null;
@@ -29,11 +30,18 @@ public class InputHandler {
 	public static final int optionIntegerSIX = 6;
 	public static final int optionIntegerSEVEN = 7;
 	public static final int optionIntegerEIGHT = 8;
+	public static final int optionIntegerNINE = 9;
 
 	Optional<Date> date1Parsed;
 	Optional<Date> date2Parsed;
+	List<Optional<String>> userTwoDateInput;
+	List<Optional<String>> userTwoDateInput1;
 	History history;
+	Optional<String> userInput;
+	Optional<String> userSingleInput;
 	String returnResultString;
+	List<Optional<String>> userTwoDateInput2;
+	localStructure localStructure;
 	ArrayList<localStructure> sessionList = new ArrayList<localStructure>();
 
 	public ArrayList<localStructure> getsessionList() {
@@ -46,172 +54,70 @@ public class InputHandler {
 	static Output standardOut;
 
 
-	public void saveIt() throws Exception {
-		setSession(new ToSerialize());
-		history.addSession(getsessionList());
-		history.save("save.ser");
-		setSession(new ToCsv());
-		history.addSession(getsessionList());
-		history.save("save.csv");
 
-	}
 	public void setSession(History history) {
 		this.history = history;
 	}
 
-	public String takeUserIntegerInput() throws Exception {
+	public Integer takeUserIntegerInput(String message) throws Exception {
+		System.out.println(message);
 		Optional<Integer> userIntegerInput = standardIn.userIntegerInput();
 		System.out.println("option selected is ->" + userIntegerInput.get());
-		return IntegerHandler(userIntegerInput.get());
+		return userIntegerInput.get();
+
+	}
+
+	public InputHandler() {
+		super();
+
+	}
+
+	public InputHandler(List<Optional<String>> userTwoDateInput) {
+		super();
+		this.userTwoDateInput = userTwoDateInput;
+		this.userTwoDateInput1 = userTwoDateInput;
+
+		this.userTwoDateInput2 = userTwoDateInput;
+		this.userSingleInput = userTwoDateInput.get(0);
+		this.userInput = userTwoDateInput.get(0);
 
 	}
 
 	public String IntegerHandler(Integer number) throws Exception {
 		switch (number) {
 		case optionIntegerTHREE:
-			Optional<String> userSingleInput = standardIn.UserInputString(OutConstants.OPTIONS1);
-			Optional<Date> dateParsed = stringParser.parser(userSingleInput.orElse(""));
+			userSingleInput = standardIn.UserInputString(OutConstants.OPTIONS1);
 
-
-			dateParsed.ifPresentOrElse(value -> {
-				System.out.println("Found Date is ->>> " + value);
-				returnResultString = value.toString();
-			}, () -> {
-				System.out.println("NO DATE FOUND");
-				returnResultString = "NO DATE FOUND";
-
-			});
-
-			sessionList
-			.add(
-					new localStructure(optionIntegerTHREE, "NONE", OutConstants.SUB_TWO_DATES_MESSAGE,
-							userSingleInput
-							.orElse(""),
-							"",
-							returnResultString));
-			//			saveIt();
-			return returnResultString;
+			return parserAPI(optionIntegerTHREE).toString();
 
 		case optionIntegerONE:
-			List<Optional<String>> userTwoDateInput = standardIn.UserTwoDateInput(OutConstants.OPTIONS1,
+			userTwoDateInput = standardIn.UserTwoDateInput(
+					OutConstants.OPTIONS1,
 					OutConstants.OPTIONS2);
-			date1 = userTwoDateInput.get(0).get();
-			date2 = userTwoDateInput.get(1).get();
 
-			date1Parsed = stringParser.parser(date1);
-			date2Parsed = stringParser.parser(date2);
 
-			if (date1Parsed.isPresent() && date2Parsed.isPresent()) {
-
-				arithmetic = new Subtraction();
-				arithmetic.equationSolver(date1Parsed.orElse(new Date()), date2Parsed.orElse(new Date()));
-
-				standardOut = new Output(arithmetic);
-				returnResultString = standardOut.UserOut("Difference between two dates is -> ");
-
-				sessionList.add(new localStructure(optionIntegerONE,
-						"Subtraction",
-						OutConstants.SUB_TWO_DATES_MESSAGE,
-						date1,
-						date2, returnResultString
-						));
-			} else {
-				System.out.println("NO DATE FOUND");
-				sessionList.add(new localStructure(optionIntegerONE, "Subtraction",
-						OutConstants.SUB_TWO_DATES_MESSAGE,
-						date1, date2, "NO DATE FOUND"));
-
-			}
-			//			saveIt();
-
-			return returnResultString;
+			return parserAPI(optionIntegerONE).toString();
 
 
 		case optionIntegerTWO:
-			List<Optional<String>> userTwoDateInput1 = standardIn.UserTwoDateInput(
+			userTwoDateInput1 = standardIn
+			.UserTwoDateInput(
 					OutConstants.OPTIONS1, OutConstants.OPTIONSNDAYSADD);
-			date1 = userTwoDateInput1.get(0).get();
-			date2 = userTwoDateInput1.get(1).get();
-			date1Parsed = stringParser.parser(date1);
-			date2Parsed = stringParser.parser(date2);
-
-			arithmetic = new NOperation("Addition");
-			if(date1Parsed.isPresent()&& date2Parsed.isPresent()) {
-
-				arithmetic.equationSolver(date1Parsed.orElse(new Date()), date2Parsed.orElse(new Date()));
-				Optional<Date> dateParsed3 = stringParser
-						.parser(arithmetic.months() + "/" + arithmetic.date() + "/" + arithmetic.years());
-
-				dateParsed3.ifPresentOrElse(value -> {
-					System.out.println("Concluded Date is ->>> " + value);
-					returnResultString = value.toString();
-				}, () -> {
-					System.out.println("NO DATE FOUND");
-					returnResultString = "NO DATE FOUND";
-				});
-
-				sessionList.add(new localStructure(optionIntegerTWO, "Addition",
-						OutConstants.OPTIONSNDAYSADD,
-						date1,
-						date2,
-						returnResultString));
-			}else {
-				System.out.println("NO DATE FOUND");
-				sessionList.add(new localStructure(optionIntegerTWO, "Addition",
-						OutConstants.OPTIONSNDAYSADD,
-						date1,
-						date2,
-						"NO DATE FOUND"));
-
-			}
 
 
-
-			//			saveIt();
-
-			return returnResultString;
+			return parserAPI(optionIntegerTWO).toString();
 		case optionIntegerFOUR:
-			List<Optional<String>> userTwoDateInput2 = standardIn
+			userTwoDateInput2 = standardIn
 			.UserTwoDateInput(
 					OutConstants.OPTIONS1,
 					OutConstants.OPTIONSNDAYSSUB);
-			date1 = userTwoDateInput2.get(0).get();
-			date2 = userTwoDateInput2.get(1).get();
-			date1Parsed = stringParser.parser(date1);
-			date2Parsed = stringParser.parser(date2);
-			if (date1Parsed.isPresent() && date2Parsed.isPresent()) {
 
-				arithmetic = new NOperation("Subtraction");
-
-				arithmetic.equationSolver(date1Parsed.orElse(new Date()), date2Parsed.orElse(new Date()));
-				Optional<Date> dateParsed4 = stringParser
-						.parser(arithmetic.months() + "/" + arithmetic.date() + "/" + arithmetic.years());
-
-				dateParsed4.ifPresentOrElse(value -> {
-					System.out.println("Concluded Date is ->>> " + value);
-					returnResultString = value.toString();
-				}, () -> {
-					System.out.println("NO DATE FOUND");
-					returnResultString = "NO DATE FOUND";
-				});
-
-				sessionList.add(new localStructure(optionIntegerFOUR,
-						"Subtraction",
-						OutConstants.OPTIONSNDAYSADD,
-						date1, date2, returnResultString));
-			} else {
-				System.out.println("NO DATE FOUND");
-				sessionList.add(new localStructure(optionIntegerFOUR, "Subtraction", OutConstants.OPTIONSNDAYSADD,
-						date1,
-						date2, "NO DATE FOUND"));
-			}
-			//			saveIt() ;
-
-			return returnResultString;
+			return parserAPI(optionIntegerFOUR).toString();
 
 
 
-		case optionIntegerFIVE:
+
+		case optionIntegerSEVEN:
 			setSession(new ToSerialize());
 			history.addSession(sessionList);
 			history.save("save.ser");
@@ -225,8 +131,161 @@ public class InputHandler {
 			history.addSession(sessionList);
 			history.save("save.csv");
 			return "DONE";
-		case optionIntegerSEVEN:
-			Optional<String> userInput = standardIn.UserInputString(OutConstants.DETERMINE_THE_WEEK_NUMBER);
+		case optionIntegerFIVE:
+
+			return parserAPI(optionIntegerFIVE).toString();
+		case optionIntegerEIGHT:
+			Integer inputInteger = takeUserIntegerInput("Enter number of tests you want to run ->");
+
+			fakeApi.run(inputInteger);
+			return "COMPLETED TESTING ON -> " + inputInteger + "RANDOM INPUT";
+
+		case optionIntegerNINE:
+
+			return "EXIT";
+
+		default:
+
+			System.out.println("\"Entered Integer is not valid\"");
+
+			sessionList.add(new localStructure(0, "ERROR", "", "", "", ""));
+			// saveIt() ;
+			return "\"Entered Integer is not valid\\";
+
+		}
+
+	}
+
+
+	public localStructure parserAPI(Integer number) throws Exception {
+		switch (number) {
+		case optionIntegerTHREE:
+			Optional<Date> dateParsed = stringParser.parser(userSingleInput.orElse(""));
+
+			dateParsed.ifPresentOrElse(value -> {
+				System.out.println("Found Date is ->>> " + value);
+				returnResultString = value.toString();
+			}, () -> {
+				System.out.println("NO DATE FOUND");
+				returnResultString = "NO DATE FOUND";
+
+			});
+			localStructure = new localStructure(optionIntegerTHREE, "NONE",
+					OutConstants.SIMPLE_DATE_STRING,
+					userSingleInput.orElse(""), "", returnResultString);
+
+			sessionList.add(localStructure);
+			// saveIt();
+			return localStructure;
+
+		case optionIntegerONE:
+
+			date1 = userTwoDateInput.get(0).get();
+			date2 = userTwoDateInput.get(1).get();
+
+			date1Parsed = stringParser.parser(date1);
+			date2Parsed = stringParser.parser(date2);
+
+			if (date1Parsed.isPresent() && date2Parsed.isPresent()) {
+
+				arithmetic = new Subtraction();
+				arithmetic.equationSolver(date1Parsed.orElse(new Date()), date2Parsed.orElse(new Date()));
+
+				standardOut = new Output(arithmetic);
+				returnResultString = standardOut.UserOut("Difference between two dates is -> ");
+				localStructure = new localStructure(optionIntegerONE, "Subtraction", OutConstants.SUB_TWO_DATES_MESSAGE,
+						date1, date2, returnResultString);
+
+				sessionList.add(localStructure);
+			} else {
+				System.out.println("NO DATE FOUND");
+				localStructure = new localStructure(optionIntegerONE, "Subtraction", OutConstants.SUB_TWO_DATES_MESSAGE,
+						date1, date2, "NO DATE FOUND");
+				sessionList.add(localStructure);
+
+			}
+			// saveIt();
+
+			return localStructure;
+
+		case optionIntegerTWO:
+
+			date1 = userTwoDateInput1.get(0).get();
+			date2 = userTwoDateInput1.get(1).get();
+			date1Parsed = stringParser.parser(date1);
+			date2Parsed = stringParser.parser(date2);
+
+			arithmetic = new NOperation("Addition");
+			if (date1Parsed.isPresent() && date2Parsed.isPresent()) {
+
+				arithmetic.equationSolver(date1Parsed.orElse(new Date()), date2Parsed.orElse(new Date()));
+				Optional<Date> dateParsed3 = stringParser
+						.parser(arithmetic.months() + "/" + arithmetic.date() + "/" + arithmetic.years());
+
+				dateParsed3.ifPresentOrElse(value -> {
+					System.out.println("Concluded Date is ->>> " + value);
+					returnResultString = value.toString();
+				}, () -> {
+					System.out.println("NO DATE FOUND");
+					returnResultString = "NO DATE FOUND";
+				});
+				localStructure = new localStructure(optionIntegerTWO, "Addition", OutConstants.OPTIONSNDAYSADD, date1,
+						date2, returnResultString);
+
+				sessionList.add(localStructure);
+			} else {
+				System.out.println("NO DATE FOUND");
+				localStructure = new localStructure(optionIntegerTWO, "Addition", OutConstants.OPTIONSNDAYSADD, date1,
+						date2, "NO DATE FOUND");
+				sessionList.add(localStructure);
+
+			}
+
+			return localStructure;
+		case optionIntegerFOUR:
+
+			date1 = userTwoDateInput2.get(0).get();
+			date2 = userTwoDateInput2.get(1).get();
+			//			System.out.println(date1);
+			//			System.out.println(date2);
+			date1Parsed = stringParser.parser(date1);
+
+			date2Parsed = stringParser.parser(date2);
+			//			System.out.println(date1Parsed);
+			//			System.out.println(date2Parsed);
+			if (date1Parsed.isPresent() && date2Parsed.isPresent()) {
+
+				arithmetic = new NOperation("Subtraction");
+
+				arithmetic.equationSolver(date1Parsed.orElse(new Date()), date2Parsed.orElse(new Date()));
+				System.out.println(arithmetic.months() + "/" + arithmetic.date() + "/" + arithmetic.years());
+				Optional<Date> dateParsed4 = stringParser
+						.parser(arithmetic.months() + "/" + arithmetic.date() + "/" + arithmetic.years());
+
+				dateParsed4.ifPresentOrElse(value -> {
+					System.out.println("Concluded Date is ->>> " + value);
+					returnResultString = value.toString();
+				}, () -> {
+					System.out.println("NO DATE FOUND");
+					returnResultString = "NO DATE FOUND";
+				});
+				localStructure = new localStructure(optionIntegerFOUR, "Subtraction",
+						OutConstants.OPTIONSNDAYSSUB,
+						date1, date2, returnResultString);
+
+				sessionList.add(localStructure);
+			} else {
+				System.out.println("NO DATE FOUND");
+				localStructure = new localStructure(optionIntegerFOUR, "Subtraction",
+						OutConstants.OPTIONSNDAYSSUB,
+						date1, date2, "NO DATE FOUND");
+				sessionList.add(localStructure);
+			}
+			// saveIt() ;
+
+			return localStructure;
+
+		case optionIntegerFIVE:
 			Optional<Date> userInputDateParsed = stringParser.parser(userInput.orElse(""));
 
 			userInputDateParsed.ifPresentOrElse(value -> {
@@ -242,34 +301,22 @@ public class InputHandler {
 				returnResultString = "WEEK NOT FOUND";
 
 			});
-
-
-			sessionList.add(new localStructure(optionIntegerSEVEN, "NONE",
+			localStructure = new localStructure(optionIntegerSEVEN, "NONE",
 					OutConstants.DETERMINE_THE_WEEK_NUMBER,
-					userInput.orElse(""), "", returnResultString));
+					userInput.orElse(""), "", returnResultString);
+
+
+			sessionList.add(localStructure);
 
 			//			saveIt();
-			return returnResultString;
-		case optionIntegerEIGHT:
-			saveIt();
-
-			return "EXIT";
-
-
-
-
-
+			return localStructure;
 		default:
+			localStructure = new localStructure(0, "ERROR", "", "", "", "");
+			return localStructure;
 
-			System.out.println("\"Entered Integer is not valid\"");
 
-			sessionList.add(new localStructure(0, "ERROR", "", "", "", ""));
-			//			saveIt() ;
-			return "\"Entered Integer is not valid\\";
 
 		}
 
-
 	}
-
 }

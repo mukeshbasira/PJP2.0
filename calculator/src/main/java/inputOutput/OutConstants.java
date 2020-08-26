@@ -23,12 +23,13 @@ public class OutConstants {
 	public static final String EXAMPLE_MESSAGE2 = " Input first date as 10/02/1990  and second Date as phrase \"5 days from now \" ";
 	public static final String OPTIONS1 = "Type First Date(MM/DD/YYYY)/String or String";
 	public static final String OPTIONS2 = " To subtract Type Second Date(MM/DD/YYYY)/string ";
-	public static final String OPTIONSNDAYSADD = "Type N days n years or a phrase having both to add";
-	public static final String OPTIONSNDAYSSUB = "Type N days n years or a phrase having both to sub";
+	public static final String OPTIONSNDAYSADD = "Type N days n years or a phrase  to add";
+	public static final String OPTIONSNDAYSSUB = "Type N days n years or a phrase to sub";
 	public static final String ASK_USER_INPUT_INTEGER = "Choose one of the  option -> Type 1 or 2 or .. ";
 	public static final String SHOWSESSION = "show all session history";
 	public static final String SAVETOCSV = "SAVE to CSV";
 	public static final String EXIT = "SAVE and EXIT";
+	public static final String GENERATE_AND_TEST_RANDOM_DATA = "generate and test random date";
 
 
 }

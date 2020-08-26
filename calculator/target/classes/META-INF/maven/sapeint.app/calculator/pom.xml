@@ -20,6 +20,15 @@
        <artifactId>slf4j-log4j12</artifactId>
        <version>1.7.5</version>
    </dependency>
+   <!-- https://mvnrepository.com/artifact/com.github.azakordonets/fabricator -->
+<!-- https://mvnrepository.com/artifact/com.github.javafaker/javafaker -->
+<dependency>
+    <groupId>com.github.javafaker</groupId>
+    <artifactId>javafaker</artifactId>
+    <version>1.0.2</version>
+</dependency>
+
+
   </dependencies>
   <properties>
     <maven.compiler.source>1.6</maven.compiler.source>
