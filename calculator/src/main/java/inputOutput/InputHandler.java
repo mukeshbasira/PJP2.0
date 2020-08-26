@@ -31,6 +31,7 @@ public class InputHandler {
 	public static final int optionIntegerSEVEN = 7;
 	public static final int optionIntegerEIGHT = 8;
 	public static final int optionIntegerNINE = 9;
+	public static final int optionIntegerTEN = 10;
 
 	Optional<Date> date1Parsed;
 	Optional<Date> date2Parsed;
@@ -140,9 +141,17 @@ public class InputHandler {
 			fakeApi.run(inputInteger);
 			return "COMPLETED TESTING ON -> " + inputInteger + "RANDOM INPUT";
 
-		case optionIntegerNINE:
+		case optionIntegerTEN:
 
 			return "EXIT";
+
+		case optionIntegerNINE:
+			setSession(new ToCsv());
+			history.addSession(sessionList);
+			history.save("saveBULK.csv");
+			return "DONE";
+
+
 
 		default:
 

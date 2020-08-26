@@ -39,7 +39,8 @@ public class Output {
 		System.out.println("6." + OutConstants.SAVETOCSV);
 		System.out.println("7." + OutConstants.SHOWSESSION);
 		System.out.println("8." + OutConstants.GENERATE_AND_TEST_RANDOM_DATA);
-		System.out.println("9." + OutConstants.EXIT);
+		System.out.println("9." + OutConstants.BULK_ADDED);
+		System.out.println("10." + OutConstants.EXIT);
 
 		// System.out.println("4." + DETERMINE_THE_WEEK_NUMBER);
 	}

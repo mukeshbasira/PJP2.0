@@ -30,6 +30,7 @@ public class OutConstants {
 	public static final String SAVETOCSV = "SAVE to CSV";
 	public static final String EXIT = "SAVE and EXIT";
 	public static final String GENERATE_AND_TEST_RANDOM_DATA = "generate and test random date";
+	public static final String BULK_ADDED = "BULK TEST ADD TO CSV";
 
 
 }
