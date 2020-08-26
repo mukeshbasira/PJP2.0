@@ -19,3 +19,8 @@ option,optionSelectedString,selectedString , userFirstDateString, userSecondDate
 4,Type N days n years or a phrase to sub,Subtraction,2008-06-28,474 days ,Sun Mar 11 17:21:38 IST 2007
 2,Type N days n years or a phrase  to add,Addition,1996-05-09,374 days ,Sun May 18 17:21:38 IST 1997
 1,You can subtract two dates(as phrase or as specified US date format).,Subtraction,2000-08-26,1991-10-24,Difference between two dates is -> 8.0 YEAR  10.0 MONTHS  0.0 WEEK  2.0 DAYS  
+2,Type N days n years or a phrase  to add,Addition,2006-08-31,503 days ,Wed Jan 16 17:39:00 IST 2008
+1,You can subtract two dates(as phrase or as specified US date format).,Subtraction,2004-11-01,1989-08-16,Difference between two dates is -> 15.0 YEAR  2.0 MONTHS  2.0 WEEK  2.0 DAYS  
+1,You can subtract two dates(as phrase or as specified US date format).,Subtraction,1980-07-06,1998-11-02,Difference between two dates is -> 18.0 YEAR  3.0 MONTHS  3.0 WEEK  6.0 DAYS  
+1,You can subtract two dates(as phrase or as specified US date format).,Subtraction,1995-11-20,1994-06-12,Difference between two dates is -> 1.0 YEAR  5.0 MONTHS  1.0 WEEK  1.0 DAYS  
+2,Type N days n years or a phrase  to add,Addition,1985-01-26,4 days ,Wed Jan 30 17:39:00 IST 1985

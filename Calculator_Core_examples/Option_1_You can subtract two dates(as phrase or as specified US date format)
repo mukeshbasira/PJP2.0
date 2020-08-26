@@ -1,0 +1,22 @@
+1.You can subtract two dates(as phrase or as specified US date format).
+2.Add 'n' Days  Months Weeks to the given date
+3.Evaluate simple date/phrase
+4.Sub 'n' Days Months Weeks to the given date
+5. Determine the Week number for a given a date
+6.SAVE to CSV
+7.show all session history
+8.generate and test random date
+9.BULK TEST ADD TO CSV
+10.SAVE and EXIT
+Choose one of the  option -> Type 1 or 2 or ..
+****************************************************************************************
+
+Select option->
+1
+option selected is ->1
+Type First Date(MM/DD/YYYY)/String or String
+02/15/1996
+ To subtract Type Second Date(MM/DD/YYYY)/string
+02/16/1998
+Difference between two dates is -> 2.0 YEAR  0.0 MONTHS  0.0 WEEK  1.0 DAYS
+****************************************************************************************

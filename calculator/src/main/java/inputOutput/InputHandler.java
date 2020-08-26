@@ -10,7 +10,7 @@ import Converter.StringParser;
 import Converter.StringtoDateParser;
 import History.History;
 import History.ToCsv;
-import History.ToSerialize;
+import History.showSession;
 import Operation.Arithmetic;
 import Operation.NOperation;
 import Operation.Subtraction;
@@ -120,9 +120,9 @@ public class InputHandler {
 
 
 		case optionIntegerSEVEN:
-			setSession(new ToSerialize());
-			history.addSession(sessionList);
-			history.save("save.ser");
+			showSession showSession = new showSession();
+
+			showSession.print(sessionList);
 
 			return "DONE";
 
@@ -134,6 +134,7 @@ public class InputHandler {
 			history.save("save.csv");
 			return "DONE";
 		case optionIntegerFIVE:
+			userInput = standardIn.UserInputString(OutConstants.DETERMINE_THE_WEEK_NUMBER);
 
 			return parserAPI(optionIntegerFIVE).toString();
 		case optionIntegerEIGHT:

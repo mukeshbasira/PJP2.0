@@ -1,0 +1,17 @@
+1.You can subtract two dates(as phrase or as specified US date format).
+2.Add 'n' Days  Months Weeks to the given date
+3.Evaluate simple date/phrase
+4.Sub 'n' Days Months Weeks to the given date
+5. Determine the Week number for a given a date
+6.SAVE to CSV
+7.show all session history
+8.generate and test random date
+9.BULK TEST ADD TO CSV
+10.SAVE and EXIT
+Choose one of the  option -> Type 1 or 2 or ..
+********************************************
+
+Select option->
+10
+option selected is ->10
+EXIT

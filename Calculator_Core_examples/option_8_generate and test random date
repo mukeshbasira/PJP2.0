@@ -1,0 +1,65 @@
+1.You can subtract two dates(as phrase or as specified US date format).
+2.Add 'n' Days  Months Weeks to the given date
+3.Evaluate simple date/phrase
+4.Sub 'n' Days Months Weeks to the given date
+5. Determine the Week number for a given a date
+6.SAVE to CSV
+7.show all session history
+8.generate and test random dates
+9.BULK TEST ADD TO CSV
+10.SAVE and EXIT
+Choose one of the  option -> Type 1 or 2 or ..
+********************************************
+
+Select option->
+8
+option selected is ->8
+Enter number of tests you want to run ->
+5
+option selected is ->5
+--------TEST-0--------RUNNING-----------
+Concluded Date is ->>> Wed Jan 16 17:39:00 IST 2008
+Concluded Date is ->>> Wed Jan 16 17:39:00 IST 2008
+ Option selected - 2
+ option phrase  was - Type N days n years or a phrase  to add
+ operation was - Addition
+ User First input was - 2006-08-31
+ User Second input was - 503 days
+ Output was - Wed Jan 16 17:39:00 IST 2008
+--------TEST-1--------RUNNING-----------
+Difference between two dates is -> 15.0 YEAR  2.0 MONTHS  2.0 WEEK  2.0 DAYS
+Difference between two dates is -> 15.0 YEAR  2.0 MONTHS  2.0 WEEK  2.0 DAYS
+ Option selected - 1
+ option phrase  was - You can subtract two dates(as phrase or as specified US date format).
+ operation was - Subtraction
+ User First input was - 2004-11-01
+ User Second input was - 1989-08-16
+ Output was - Difference between two dates is -> 15.0 YEAR  2.0 MONTHS  2.0 WEEK  2.0 DAYS
+--------TEST-2--------RUNNING-----------
+Difference between two dates is -> 18.0 YEAR  3.0 MONTHS  3.0 WEEK  6.0 DAYS
+Difference between two dates is -> 18.0 YEAR  3.0 MONTHS  3.0 WEEK  6.0 DAYS
+ Option selected - 1
+ option phrase  was - You can subtract two dates(as phrase or as specified US date format).
+ operation was - Subtraction
+ User First input was - 1980-07-06
+ User Second input was - 1998-11-02
+ Output was - Difference between two dates is -> 18.0 YEAR  3.0 MONTHS  3.0 WEEK  6.0 DAYS
+--------TEST-3--------RUNNING-----------
+Difference between two dates is -> 1.0 YEAR  5.0 MONTHS  1.0 WEEK  1.0 DAYS
+Difference between two dates is -> 1.0 YEAR  5.0 MONTHS  1.0 WEEK  1.0 DAYS
+ Option selected - 1
+ option phrase  was - You can subtract two dates(as phrase or as specified US date format).
+ operation was - Subtraction
+ User First input was - 1995-11-20
+ User Second input was - 1994-06-12
+ Output was - Difference between two dates is -> 1.0 YEAR  5.0 MONTHS  1.0 WEEK  1.0 DAYS
+--------TEST-4--------RUNNING-----------
+Concluded Date is ->>> Wed Jan 30 17:39:00 IST 1985
+Concluded Date is ->>> Wed Jan 30 17:39:00 IST 1985
+ Option selected - 2
+ option phrase  was - Type N days n years or a phrase  to add
+ operation was - Addition
+ User First input was - 1985-01-26
+ User Second input was - 4 days
+ Output was - Wed Jan 30 17:39:00 IST 1985
+********************************************

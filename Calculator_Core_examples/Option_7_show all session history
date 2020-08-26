@@ -1,0 +1,31 @@
+1.You can subtract two dates(as phrase or as specified US date format).
+2.Add 'n' Days  Months Weeks to the given date
+3.Evaluate simple date/phrase
+4.Sub 'n' Days Months Weeks to the given date
+5. Determine the Week number for a given a date
+6.SAVE to CSV
+7.show all session history
+8.generate and test random date
+9.BULK TEST ADD TO CSV
+10.SAVE and EXIT
+Choose one of the  option -> Type 1 or 2 or ..
+********************************************
+
+Select option->
+7
+option selected is ->7
+---------------Entry number--1-------------
+ Option selected - 1
+option phrase  was - You can subtract two dates(as phrase or as specified US date format).
+operation was - Subtraction
+User First input was - today
+User Second input was - yesterday
+Output was - Difference between two dates is -> 0.0 YEAR  0.0 MONTHS  0.0 WEEK  1.0 DAYS
+---------------Entry number--2-------------
+ Option selected - 2
+option phrase  was - Type N days n years or a phrase  to add
+operation was - Addition
+User First input was - today
+User Second input was - 2 days
+Output was - Fri Aug 28 17:38:11 IST 2020
+********************************************
