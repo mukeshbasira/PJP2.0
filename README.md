@@ -8,12 +8,12 @@ Hello, welcome to the calculator App.
 
 If you want to enter date enter it in MM/DD/YYYY format or just type a phrase as mentioned in example
 
---------------EXAMPLES ------------ 
+--------------EXAMPLES ------------
 
- Input first date as 10/02/1990  and second as 1/02/1990 
- 
- Input first date as 10/02/1990  and second Date as phrase "5 days from now " 
- 
+ Input first date as 10/02/1990  and second as 1/02/1990
+
+ Input first date as 10/02/1990  and second Date as phrase "5 days from now "
+
 !!!!!!!!!!     FOR MORE EXAMPLES visit http://natty.joestelmach.com/doc.jsp     !!!!!!!!!!
 
 1. You can subtract two dates(as phrase or as specified US date format).
@@ -38,7 +38,7 @@ If you want to enter date enter it in MM/DD/YYYY format or just type a phrase as
 
 
 
-#### FOR TESTED EXAMPLES VISIT EXAMPLE FOLDER TEST [NAME of OTION SELECTED] . ALL CSV OR BULK CSV FILES ARE IN CALCULATOR APP FOLDER.
+#### FOR TESTED EXAMPLES VISIT EXAMPLE FOLDER TEST [NAME of OPTION SELECTED] . ALL CSV OR BULK CSV FILES ARE IN CALCULATOR APP FOLDER.
 
 * [Main Project](https://github.com/mukeshbasira/PJP2.0)
 
