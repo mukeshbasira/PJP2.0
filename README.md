@@ -1,7 +1,7 @@
 | PJP2.0 weekly assignment |
 ===========================
 
-## CALCUALTOR
+## DATE CALCULATOR
 
 
 Hello, welcome to the calculator App.
