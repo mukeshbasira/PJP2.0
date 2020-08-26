@@ -8,22 +8,42 @@ Completed  -
 
 ***************CALCUALTOR*******************
 
+
 ********************************************
 
+
 Hello, welcome to the calculator App.
+
 If you want to enter date enter it in MM/DD/YYYY format or just type a phrase as mentioned in example
---------------EXAMPLES ------------
- Input first date as 10/02/1990  and second as 1/02/1990
- Input first date as 10/02/1990  and second Date as phrase "5 days from now "
+
+--------------EXAMPLES ------------ 
+
+ Input first date as 10/02/1990  and second as 1/02/1990 
+ 
+ Input first date as 10/02/1990  and second Date as phrase "5 days from now " 
+ 
 !!!!!!!!!!     FOR MORE EXAMPLES visit http://natty.joestelmach.com/doc.jsp     !!!!!!!!!!
+
 1.You can subtract two dates(as phrase or as specified US date format).
+
 2.Add 'n' Days  Months Weeks to the given date
+
 3.Evaluate simple date/phrase
+
 4.Sub 'n' Days Months Weeks to the given date
-5.show all session history
+
+5. Determine the Week number for a given a date
+
 6.SAVE to CSV
-7. Determine the Week number for a given a date
-8.SAVE and EXIT
+
+7.show all session history
+
+8.generate and test random date
+
+9.BULK TEST ADD TO CSV
+
+10.SAVE and EXIT
+
 * [Main Project](https://github.com/mukeshbasira/PJP2.0)
 
 
