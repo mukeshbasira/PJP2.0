@@ -1,1 +1,21 @@
 option,optionSelectedString,selectedString , userFirstDateString, userSecondDateString, result
+1,You can subtract two dates(as phrase or as specified US date format).,Subtraction,1992-05-14,2020-04-14,Difference between two dates is -> 27.0 YEAR  11.0 MONTHS  0.0 WEEK  0.0 DAYS  
+4,Type N days n years or a phrase to sub,Subtraction,1990-07-02,131 days ,Wed Feb 21 17:21:38 IST 1990
+3,Evaluate simple date/phrase,NONE,1989-10-21,,Sat Oct 21 17:21:38 IST 1989
+2,Type N days n years or a phrase  to add,Addition,1997-09-30,164 days ,Wed Mar 11 17:21:38 IST 1998
+4,Type N days n years or a phrase to sub,Subtraction,1986-07-12,404 days ,Tue Jun 04 17:21:38 IST 1985
+4,Type N days n years or a phrase to sub,Subtraction,1986-02-03,171 days ,Fri Aug 16 17:21:38 IST 1985
+4,Type N days n years or a phrase to sub,Subtraction,1981-09-29,80 days ,Fri Jul 10 17:21:38 IST 1981
+1,You can subtract two dates(as phrase or as specified US date format).,Subtraction,1995-09-12,1989-01-27,Difference between two dates is -> 6.0 YEAR  7.0 MONTHS  2.0 WEEK  2.0 DAYS  
+3,Evaluate simple date/phrase,NONE,1995-01-20,,Fri Jan 20 17:21:38 IST 1995
+1,You can subtract two dates(as phrase or as specified US date format).,Subtraction,2001-02-06,2002-10-30,Difference between two dates is -> 1.0 YEAR  8.0 MONTHS  3.0 WEEK  3.0 DAYS  
+3,Evaluate simple date/phrase,NONE,1987-05-15,,Fri May 15 17:21:38 IST 1987
+2,Type N days n years or a phrase  to add,Addition,2013-05-03,200 days ,Tue Nov 19 17:21:38 IST 2013
+3,Evaluate simple date/phrase,NONE,1988-04-07,,Thu Apr 07 17:21:38 IST 1988
+4,Type N days n years or a phrase to sub,Subtraction,1996-06-25,261 days ,Sat Oct 07 17:21:38 IST 1995
+2,Type N days n years or a phrase  to add,Addition,1986-04-03,26 days ,Tue Apr 29 17:21:38 IST 1986
+2,Type N days n years or a phrase  to add,Addition,1982-11-14,349 days ,Sat Oct 29 17:21:38 IST 1983
+4,Type N days n years or a phrase to sub,Subtraction,2009-09-12,12 days ,Mon Aug 31 17:21:38 IST 2009
+4,Type N days n years or a phrase to sub,Subtraction,2008-06-28,474 days ,Sun Mar 11 17:21:38 IST 2007
+2,Type N days n years or a phrase  to add,Addition,1996-05-09,374 days ,Sun May 18 17:21:38 IST 1997
+1,You can subtract two dates(as phrase or as specified US date format).,Subtraction,2000-08-26,1991-10-24,Difference between two dates is -> 8.0 YEAR  10.0 MONTHS  0.0 WEEK  2.0 DAYS  

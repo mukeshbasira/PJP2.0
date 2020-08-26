@@ -44,6 +44,7 @@ public class InputHandler {
 	List<Optional<String>> userTwoDateInput2;
 	localStructure localStructure;
 	ArrayList<localStructure> sessionList = new ArrayList<localStructure>();
+	ArrayList<localStructure> BulksessionList = new ArrayList<localStructure>();
 
 	public ArrayList<localStructure> getsessionList() {
 		return sessionList;
@@ -73,8 +74,8 @@ public class InputHandler {
 
 	}
 
-	public InputHandler(List<Optional<String>> userTwoDateInput) {
-		super();
+	public void setuserTwoDateInput(List<Optional<String>> userTwoDateInput) {
+
 		this.userTwoDateInput = userTwoDateInput;
 		this.userTwoDateInput1 = userTwoDateInput;
 
@@ -138,7 +139,7 @@ public class InputHandler {
 		case optionIntegerEIGHT:
 			Integer inputInteger = takeUserIntegerInput("Enter number of tests you want to run ->");
 
-			fakeApi.run(inputInteger);
+			BulksessionList = fakeApi.run(inputInteger);
 			return "COMPLETED TESTING ON -> " + inputInteger + "RANDOM INPUT";
 
 		case optionIntegerTEN:
@@ -147,7 +148,8 @@ public class InputHandler {
 
 		case optionIntegerNINE:
 			setSession(new ToCsv());
-			history.addSession(sessionList);
+			history.addSession(BulksessionList);
+
 			history.save("saveBULK.csv");
 			return "DONE";
 

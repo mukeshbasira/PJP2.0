@@ -1,18 +1,21 @@
 package dataGenerator;
 
 import java.time.LocalDate;
+import java.util.ArrayList;
 import java.util.LinkedList;
 import java.util.List;
 import java.util.Optional;
 import java.util.concurrent.ThreadLocalRandom;
 
+import Structure.localStructure;
 import inputOutput.InputHandler;
 
 //not added
 public class fakeApi {
-	static InputHandler inputHandler;
+	static InputHandler inputHandler = new InputHandler();
+	static ArrayList<localStructure> localStructures = new ArrayList<localStructure>();
 
-	public static void run(Integer times) throws Exception {
+	public static ArrayList<localStructure> run(Integer times) throws Exception {
 		RandomDate rd = new RandomDate(LocalDate.of(1980, 1, 1), LocalDate.of(2021, 1, 1));
 
 
@@ -34,7 +37,8 @@ public class fakeApi {
 
 				userTwoDateInput.add(firstdateOptional);
 				userTwoDateInput.add(seconddateOptional);
-				inputHandler = new InputHandler(userTwoDateInput);
+				inputHandler.setuserTwoDateInput(userTwoDateInput);
+				localStructures.add(inputHandler.parserAPI(randomNum));
 
 				System.out.println(inputHandler.parserAPI(randomNum));
 
@@ -46,7 +50,8 @@ public class fakeApi {
 
 				userTwoDateInput.add(firstdateOptional);
 				userTwoDateInput.add(seconddateOptional);
-				inputHandler = new InputHandler(userTwoDateInput);
+				inputHandler.setuserTwoDateInput(userTwoDateInput);
+				localStructures.add(inputHandler.parserAPI(randomNum));
 
 				System.out.println(inputHandler.parserAPI(randomNum));
 
@@ -57,7 +62,8 @@ public class fakeApi {
 
 				userTwoDateInput.add(firstdateOptional);
 
-				inputHandler = new InputHandler(userTwoDateInput);
+				inputHandler.setuserTwoDateInput(userTwoDateInput);
+				localStructures.add(inputHandler.parserAPI(randomNum));
 
 				System.out.println(inputHandler.parserAPI(randomNum));
 
@@ -68,7 +74,8 @@ public class fakeApi {
 
 				userTwoDateInput.add(firstdateOptional);
 				userTwoDateInput.add(seconddateOptional);
-				inputHandler = new InputHandler(userTwoDateInput);
+				inputHandler.setuserTwoDateInput(userTwoDateInput);
+				localStructures.add(inputHandler.parserAPI(randomNum));
 
 				System.out.println(inputHandler.parserAPI(randomNum));
 
@@ -78,7 +85,8 @@ public class fakeApi {
 
 				userTwoDateInput.add(firstdateOptional);
 
-				inputHandler = new InputHandler(userTwoDateInput);
+				inputHandler.setuserTwoDateInput(userTwoDateInput);
+				localStructures.add(inputHandler.parserAPI(randomNum));
 
 				System.out.println(inputHandler.parserAPI(randomNum));
 
@@ -86,13 +94,13 @@ public class fakeApi {
 
 			default:
 				System.out.println("Integer error");
-				return;
+				return null;
 
 			}
 
 
 		}
-
+		return localStructures;
 
 	}
 
