@@ -16,23 +16,23 @@ If you want to enter date enter it in MM/DD/YYYY format or just type a phrase as
  
 !!!!!!!!!!     FOR MORE EXAMPLES visit http://natty.joestelmach.com/doc.jsp     !!!!!!!!!!
 
-1.You can subtract two dates(as phrase or as specified US date format).
+1. You can subtract two dates(as phrase or as specified US date format).
 
-2.Add 'n' Days  Months Weeks to the given date
+2. Add 'n' Days  Months Weeks to the given date
 
-3.Evaluate simple date/phrase
+3. Evaluate simple date/phrase
 
-4.Sub 'n' Days Months Weeks to the given date
+4. Sub 'n' Days Months Weeks to the given date
 
 5. Determine the Week number for a given a date
 
-6.SAVE to CSV
+6. SAVE to CSV
 
-7.show all session history
+7. show all session history
 
-8.generate and test random date
+8. generate and test random date
 
-9.BULK TEST ADD TO CSV
+9. BULK TEST ADD TO CSV
 
 10.SAVE and EXIT
 
