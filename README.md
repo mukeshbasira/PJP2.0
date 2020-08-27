@@ -43,7 +43,7 @@
 
 ## JAVA TRADE FEE CALCULATOR
 - [TRADE FEE CALCULATOR](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator)
-- [CALCULATOR Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment%202%20-%20Java.pdf)
+- [TRADE FEE CALCULATOR Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment%202%20-%20Java.pdf)
 
 
 
