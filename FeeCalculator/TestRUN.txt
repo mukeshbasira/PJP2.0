@@ -1,0 +1,141 @@
+------Intraday------
+client_Id  HJ
+transaction_Type  BUY
+transaction_Date  Mon Nov 04 00:00:00 IST 2013
+priority_Flag  N
+processFEEInteger  10
+
+client_Id  HJ
+transaction_Type  SELL
+transaction_Date  Mon Nov 04 00:00:00 IST 2013
+priority_Flag  N
+processFEEInteger  10
+
+client_Id  AP
+transaction_Type  BUY
+transaction_Date  Mon Nov 25 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  10
+
+client_Id  AP
+transaction_Type  SELL
+transaction_Date  Mon Nov 25 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  10
+
+------NORMAL TRADES------
+client_Id  GS
+transaction_Type  BUY
+transaction_Date  Sat Nov 23 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  500
+
+client_Id  AS
+transaction_Type  SELL
+transaction_Date  Wed Nov 20 00:00:00 IST 2013
+priority_Flag  N
+processFEEInteger  100
+
+client_Id  AP
+transaction_Type  DEPOSIT
+transaction_Date  Tue Nov 19 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  500
+
+client_Id  AS
+transaction_Type  SELL
+transaction_Date  Thu Nov 07 00:00:00 IST 2013
+priority_Flag  N
+processFEEInteger  100
+
+client_Id  HJ
+transaction_Type  WITHDRAW
+transaction_Date  Sat Nov 30 00:00:00 IST 2013
+priority_Flag  N
+processFEEInteger  100
+
+client_Id  AP
+transaction_Type  DEPOSIT
+transaction_Date  Wed Nov 06 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  500
+
+client_Id  AP
+transaction_Type  BUY
+transaction_Date  Sun Nov 03 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  500
+
+client_Id  GS
+transaction_Type  WITHDRAW
+transaction_Date  Tue Nov 05 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  500
+
+client_Id  GS
+transaction_Type  WITHDRAW
+transaction_Date  Tue Nov 26 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  500
+
+client_Id  AP
+transaction_Type  BUY
+transaction_Date  Mon Nov 25 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  500
+
+client_Id  AS
+transaction_Type  SELL
+transaction_Date  Sun Nov 10 00:00:00 IST 2013
+priority_Flag  N
+processFEEInteger  100
+
+client_Id  AS
+transaction_Type  BUY
+transaction_Date  Wed Nov 06 00:00:00 IST 2013
+priority_Flag  N
+processFEEInteger  50
+
+client_Id  AS
+transaction_Type  DEPOSIT
+transaction_Date  Sat Nov 02 00:00:00 IST 2013
+priority_Flag  N
+processFEEInteger  50
+
+client_Id  AP
+transaction_Type  BUY
+transaction_Date  Sat Nov 09 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  500
+
+client_Id  GS
+transaction_Type  DEPOSIT
+transaction_Date  Mon Nov 11 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  500
+
+client_Id  AP
+transaction_Type  BUY
+transaction_Date  Tue Nov 12 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  500
+
+client_Id  GS
+transaction_Type  BUY
+transaction_Date  Fri Nov 08 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  500
+
+client_Id  AS
+transaction_Type  SELL
+transaction_Date  Wed Nov 13 00:00:00 IST 2013
+priority_Flag  N
+processFEEInteger  100
+
+client_Id  GS
+transaction_Type  WITHDRAW
+transaction_Date  Fri Nov 01 00:00:00 IST 2013
+priority_Flag  Y
+processFEEInteger  500
+
+CSV file was created successfully !!!
