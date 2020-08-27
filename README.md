@@ -38,7 +38,7 @@ If you want to enter date enter it in MM/DD/YYYY format or just type a phrase as
 
 
 
-#### FOR TESTED EXAMPLES VISIT EXAMPLE FOLDER TEST [NAME of OPTION SELECTED] . ALL CSV OR BULK CSV FILES ARE IN CALCULATOR APP FOLDER.
+#### FOR TESTED EXAMPLES VISIT EXAMPLE FOLDER TEST_[NAME of OPTION SELECTED] . ALL CSV OR BULK CSV FILES ARE IN CALCULATOR APP FOLDER.
 
 
 ## DATE CALCULATOR PostgreSQL Hibernate Extends CORE Java app 
@@ -49,7 +49,7 @@ For learning based approach only -->> Will Run on DATA of 30 random test MANUALL
 spring.jpa.hibernate.ddl-auto=create-drop 
 ```
 
-## DATE CALCULATOR PostgreSQL SQL Extends CORE Java app 
+## DATE CALCULATOR PostgreSQL SQL Extends CORE Java app (Get only Bulk Test DATA from DB from all previous sessions)
 
 Will RUN like core JAVA app. Its an ADD on to core java. Data will be randomly generated on User Input. And all data will be saved to local DB. 
 
