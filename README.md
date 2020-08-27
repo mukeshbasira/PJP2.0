@@ -36,6 +36,25 @@ If you want to enter date enter it in MM/DD/YYYY format or just type a phrase as
 
 10.SAVE and EXIT
 
+### APP supported formats
+```
+YYYY-MM-DD
+1978-01-28
+MM/DD/YY
+2/28/79
+The 31st of April in the year 2008
+Fri, 21 Nov 1997
+Jan 21, '97
+Sun, Nov 21
+jan 1st
+february twenty-eighth
+last wednesday
+the day before
+the monday after
+10 seconds ago
+in 5 minutes
+
+```
 
 
 #### FOR TESTED EXAMPLES VISIT CALCULATOR CORE INPUT EXAMPLES FOLDER OPTION_[NAME of OPTION SELECTED] . ALL CSV OR BULK CSV FILES ARE IN CALCULATOR APP FOLDER.
