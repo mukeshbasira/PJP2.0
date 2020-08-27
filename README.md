@@ -15,6 +15,8 @@ If you want to enter date enter it in MM/DD/YYYY format or just type a phrase as
  Input first date as 10/02/1990  and second Date as phrase "5 days from now "
 
  [FOR MORE EXAMPLES](http://natty.joestelmach.com/doc.jsp)
+ 
+| SUPPORT |
 
 1 You can subtract two dates(as phrase or as specified US date format).
 
