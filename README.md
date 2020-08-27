@@ -60,7 +60,7 @@ Main runner will print has all the basic STATS.
 ```
 schema.sql // uncomment this file to create new DB or use as it is if DB is there
 ```
-#### ALL images related to PostgreSQL can be found in IMAGES_PostgreSQL
+#### *ALL images related to PostgreSQL can be found in IMAGES_PostgreSQL
 
 
 * [Main Project](https://github.com/mukeshbasira/PJP2.0)
