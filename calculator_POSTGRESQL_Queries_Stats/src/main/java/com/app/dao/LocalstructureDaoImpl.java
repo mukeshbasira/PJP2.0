@@ -11,9 +11,6 @@ import org.springframework.stereotype.Service;
 
 import com.app.Structure.localStructure;
 
-/**
- * Created by jt on 1/10/17.
- */
 @Service
 public class LocalstructureDaoImpl implements LocalstructureDao {
 
