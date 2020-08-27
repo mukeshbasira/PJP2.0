@@ -1,7 +1,7 @@
 | PJP2.0 weekly assignment |
 ===========================
 
-## DATE CALCULATOR
+## DATE CALCULATOR CORE JAVA
 
 
 Hello, welcome to the calculator App.
@@ -39,6 +39,29 @@ If you want to enter date enter it in MM/DD/YYYY format or just type a phrase as
 
 
 #### FOR TESTED EXAMPLES VISIT EXAMPLE FOLDER TEST [NAME of OPTION SELECTED] . ALL CSV OR BULK CSV FILES ARE IN CALCULATOR APP FOLDER.
+
+
+## DATE CALCULATOR PostgreSQL Hibernate Extends CORE Java app 
+
+For learning based approach only -->> Will Run on DATA of 30 random test MANUALLY CHANGE IT. 
+
+```
+spring.jpa.hibernate.ddl-auto=create-drop 
+```
+
+## DATE CALCULATOR PostgreSQL SQL Extends CORE Java app 
+
+Will RUN like core JAVA app. Its an ADD on to core java. Data will be randomly generated on User Input. And all data will be saved to local DB. 
+
+DAO files contains queries.
+
+Main runner will print has all the basic STATS.
+
+```
+schema.sql // uncomment this file to create new DB or use as it is
+```
+#### ALL images related to PostgreSQL can be found in IMAGES_PostgreSQL
+
 
 * [Main Project](https://github.com/mukeshbasira/PJP2.0)
 
