@@ -69,7 +69,7 @@ For learning based approach only -->> Will Run on DATA of 30 random test (MANUAL
 spring.jpa.hibernate.ddl-auto=create-drop 
 ```
 
-## DATE CALCULATOR PostgreSQL SQL Extends CORE Java app (Get and give STATS of only Bulk Test DATA from DB from all previous sessions)
+## DATE CALCULATOR PostgreSQL SQL Extends CORE Java app (Give STATS of only Bulk Test DATA from DB from all previous sessions )
 
 Will RUN like core JAVA app. Its an ADD on to core java. Data will be randomly generated on User Input. And all data will be saved to local DB. 
 
