@@ -8,33 +8,33 @@ Hello, welcome to the calculator App.
 
 If you want to enter date enter it in MM/DD/YYYY format or just type a phrase as mentioned in example
 
---------------EXAMPLES ------------
+#### EXAMPLES
 
  Input first date as 10/02/1990  and second as 1/02/1990
 
  Input first date as 10/02/1990  and second Date as phrase "5 days from now "
 
-!!!!!!!!!!     FOR MORE EXAMPLES visit http://natty.joestelmach.com/doc.jsp     !!!!!!!!!!
+ [FOR MORE EXAMPLES](http://natty.joestelmach.com/doc.jsp)
 
-1. You can subtract two dates(as phrase or as specified US date format).
+1 You can subtract two dates(as phrase or as specified US date format).
 
-2. Add 'n' Days  Months Weeks to the given date
+2 Add 'n' Days  Months Weeks to the given date
 
-3. Evaluate simple date/phrase
+3 Evaluate simple date/phrase
 
-4. Sub 'n' Days Months Weeks to the given date
+4 Sub 'n' Days Months Weeks to the given date
 
-5. Determine the Week number for a given a date
+5 Determine the Week number for a given a date
 
-6. SAVE to CSV
+6 SAVE to CSV
 
-7. show all session history
+7 show all session history
 
-8. generate and test random date
+8 generate and test random date
 
-9. BULK TEST ADD TO CSV
+9 BULK TEST ADD TO CSV
 
-10.SAVE and EXIT
+10 SAVE and EXIT
 
 ### APP supported formats
 ```
@@ -56,19 +56,18 @@ in 5 minutes
 
 ```
 
-
 #### FOR TESTED EXAMPLES VISIT CALCULATOR CORE INPUT EXAMPLES FOLDER OPTION_[NAME of OPTION SELECTED] . ALL CSV OR BULK CSV FILES ARE IN CALCULATOR APP FOLDER.
 
 
 ## DATE CALCULATOR PostgreSQL Hibernate Extends CORE Java app 
 
-For learning based approach only -->> Will Run on DATA of 30 random test MANUALLY CHANGE IT. 
+For learning based approach only -->> Will Run on DATA of 30 random test (MANUALLY CHANGE IT). 
 
 ```
 spring.jpa.hibernate.ddl-auto=create-drop 
 ```
 
-## DATE CALCULATOR PostgreSQL SQL Extends CORE Java app (Get only Bulk Test DATA from DB from all previous sessions)
+## DATE CALCULATOR PostgreSQL SQL Extends CORE Java app (Get and give STATS of only Bulk Test DATA from DB from all previous sessions)
 
 Will RUN like core JAVA app. Its an ADD on to core java. Data will be randomly generated on User Input. And all data will be saved to local DB. 
 
