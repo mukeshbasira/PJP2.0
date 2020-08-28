@@ -87,6 +87,10 @@ schema.sql // uncomment this file to create new DB or use as it is if DB is ther
 Visit FEE CALCULATOR Folder. Input and output csv are there with a txt file showing a test run. 
 - [TRADE FEE CALCULATOR Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment%202%20-%20Java.pdf)
 
+# CURRENCY AVG JAVA 
+
+Visit CURRENCY CALCULATOR Folder. Input and output csv are there with a txt file showing a test run. 
+
 
 
 
