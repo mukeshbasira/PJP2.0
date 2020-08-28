@@ -1,0 +1,25 @@
+[cityOrCountry  USA
+gender  M
+avgincome  66564.336, cityOrCountry  USA
+gender  F
+avgincome  53760.0, cityOrCountry  New Delhi
+gender  M
+avgincome  3652.197, cityOrCountry  New Delhi
+gender  F
+avgincome  1718.6818, cityOrCountry  UK
+gender  M
+avgincome  41091.043, cityOrCountry  UK
+gender  F
+avgincome  30516.418, cityOrCountry  SINGAPORE
+gender  M
+avgincome  51240.0, cityOrCountry  SINGAPORE
+gender  F
+avgincome  40228.668, cityOrCountry  HONG KONG
+gender  M
+avgincome  32118.75, cityOrCountry  HONG KONG
+gender  F
+avgincome  22744.125, cityOrCountry  IND
+gender  M
+avgincome  3660.3635, cityOrCountry  IND
+gender  F
+avgincome  2560.6362]
