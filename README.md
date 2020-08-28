@@ -1,6 +1,10 @@
 | PJP2.0 weekly assignment |
 ===========================
 
+
+
+* [LINK TO PJP central (ALL weeks)](https://github.com/mukeshbasira/PJP2.0)
+
 ## DATE CALCULATOR CORE JAVA
 - [Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment.pdf)
 
@@ -94,7 +98,6 @@ Visit CURRENCY CALCULATOR Folder. Input and output csv are there with a txt file
 
 
 
-* [Main Project](https://github.com/mukeshbasira/PJP2.0)
 
 # WEEK 2 BATCH 5
 
