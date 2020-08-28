@@ -83,7 +83,7 @@ schema.sql // uncomment this file to create new DB or use as it is if DB is ther
 ```
 #### *ALL images related to PostgreSQL can be found in IMAGES_PostgreSQL
 
-# DATE FEE CALCULATOR 
+# TRADE FEE CALCULATOR 
 Visit FEE CALCULATOR Folder. Input and output csv are there with a txt file showing a test run. 
 - [TRADE FEE CALCULATOR Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment%202%20-%20Java.pdf)
 
