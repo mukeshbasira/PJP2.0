@@ -3,6 +3,8 @@ package com.app;
 import java.io.FileNotFoundException;
 import java.io.IOException;
 import java.util.ArrayList;
+import java.util.Collections;
+import java.util.Comparator;
 
 import com.app.algo.Algo;
 import com.app.attribute.Attribute;
@@ -22,7 +24,17 @@ public class AppRunner {
 		//		}
 		Algo algo  = new Algo();
 		ArrayList<AttributeWriting> calculate = algo.calculate(show);
+		Collections.sort(calculate, new Comparator<AttributeWriting>() {
 
+			public int compare(AttributeWriting t, AttributeWriting t1) {
+				int comp = t.getCityOrCountry().compareTo(t1.getCityOrCountry());
+				if (comp != 0) {    // names are different
+					return comp;
+				}
+				return t.getGender().compareTo(t1.getGender());
+			}
+		});
+		System.out.println(calculate);
 		//		ArrayList<AttributeWriting> calculate
 
 		CsvWriter csvWriterr = new CsvWriter();

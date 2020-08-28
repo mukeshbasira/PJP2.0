@@ -151,7 +151,7 @@ public class Algo {
 
 
 		}
-		System.out.println(resultArrayList);
+		// System.out.println(resultArrayList);
 		return resultArrayList;
 	}
 
