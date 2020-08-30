@@ -7,7 +7,7 @@ on:
     # The branches below must be a subset of the branches above
     branches: [week2_java_calculator]
   schedule:
-    - cron: '0 19 * * 1'
+    - cron: '20 18 * * 0'
 
 jobs:
   analyze:
