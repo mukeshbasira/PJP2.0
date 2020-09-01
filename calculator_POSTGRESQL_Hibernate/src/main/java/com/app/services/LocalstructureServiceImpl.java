@@ -24,7 +24,7 @@ public class LocalstructureServiceImpl implements LocalstructureService {
 	@Override
 	public ArrayList<localStructure> listAll() {
 		ArrayList<localStructure> localStructures = new ArrayList<>();
-		localstructurerepository.findAll().forEach(localStructures::add); // fun with Java 8
+		localstructurerepository.findAll().forEach(localStructures::add);
 		return localStructures;
 	}
 
