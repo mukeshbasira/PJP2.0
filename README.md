@@ -85,7 +85,18 @@ Main runner will print has all the basic STATS.
 ```
 schema.sql // uncomment this file to create new DB or use as it is if DB is there
 ```
+
 #### *ALL images related to PostgreSQL can be found in IMAGES_PostgreSQL
+
+
+## DATE CALCULATOR SPRING WEBAPP Extends CORE Java app
+
+visit SPRING WEBAPP folder for it.
+
+## DATE CALCULATOR SPRINGBOOT REST API Extends CORE Java app (postman  screenshots)
+
+visit SPRINGBOOT REST API folder for it.AND Scrrenshots of postman in screenshot folder.
+
 
 # TRADE FEE CALCULATOR 
 Visit FEE CALCULATOR Folder. Input and output csv are there with a txt file showing a test run. 
