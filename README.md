@@ -36,18 +36,12 @@
 ### Udemy Course for maven
 1. [Maven](https://www.udemy.com/course/learn-maven-java-dependency-management-in-20-steps/ ) 
 
-## JAVA DATE CALCULATOR (FULL project)
+## JAVA ALL Projects (FULL project)
 
-- [DATE CALCULATOR Project](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator)
-- [CALCULATOR Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/master/Assignments/Week%202%20Assignment.pdf)
+- [JAVA ALL Projects](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator)
 
-## JAVA TRADE FEE CALCULATOR
-- [TRADE FEE CALCULATOR](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator)
-- [TRADE FEE CALCULATOR Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment%202%20-%20Java.pdf)
 
-## JAVA CURRENCY AVG CALCULATOR
-- [CURRENCY AVG CALCULATOR](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator)
-- [CURRENCY AVG C Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment%203%20-%20Java.pdf)
+
 
 
 
