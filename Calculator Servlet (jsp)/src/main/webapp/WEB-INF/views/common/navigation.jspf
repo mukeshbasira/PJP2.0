@@ -1,0 +1,12 @@
+
+<nav role="navigation" class="navbar navbar-default">
+	<div>
+		<a href="https://www.publicissapient.com" class="navbar-brand">PUBLICIS SAPIENT</a>
+	</div>
+	<div>
+		<ul class="nav navbar-nav">
+			<li ><a href="welcome">Welcome</a></li>
+			<li ><a href="main">Main</a></li>
+		</ul>
+	</div>
+</nav>
