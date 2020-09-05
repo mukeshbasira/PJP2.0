@@ -1,7 +1,7 @@
 | PJP2.0 weekly assignment |
 ===========================
 
-Note : Use JDK-11 for all Apps. Some of the functionalities are mixed. like (SpringBoot Rest has no UI as it's already done in Spring . Swagger is added to springBoot app). :) 
+Note : Use JDK-11 for all Apps. Some of the functionalities are mixed. like (SpringBoot RestAPI has no UI as it's already done in Spring App. Swagger is added to springBoot app). :) 
 
 # WEEK 2,3 BATCH 5
 
