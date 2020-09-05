@@ -68,6 +68,8 @@ in 5 minutes
 
 ## 2. DATE CALCULATOR PostgreSQL Hibernate Extends CORE Java app 
 
+visit CALCULATOR PostgreSQL Hibernate folder.
+
 For learning based approach only -->> Will Run on DATA of 30 random test (MANUALLY CHANGE IT). 
 
 ```
@@ -75,6 +77,8 @@ spring.jpa.hibernate.ddl-auto=create-drop
 ```
 
 ## 3. DATE CALCULATOR PostgreSQL SQL Extends CORE Java app (Give STATS of only Bulk Test DATA from DB from all previous sessions )
+
+Visit CALCULATOR PostgreSQL queries folder.
 
 Will RUN like core JAVA app. Its an ADD on to core java. Data will be randomly generated on User Input. And all data will be saved to local DB. 
 
