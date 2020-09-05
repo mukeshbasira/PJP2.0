@@ -1,6 +1,7 @@
 | PJP2.0 weekly assignment |
 ===========================
 
+Note : Use JDK-11 for all Apps.
 
 # WEEK 2,3 BATCH 5
 
@@ -9,11 +10,12 @@
 - [Assignment statements](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Assignments)
 
 
-
-
 * [LINK TO PJP central (ALL weeks)](https://github.com/mukeshbasira/PJP2.0)
 
 ## 1. DATE CALCULATOR CORE JAVA
+
+*Mutlt lang.  and testNG not Added.
+
 - [Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment.pdf)
 
 Simple [calculator](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/calculator) is in calculator folder.
