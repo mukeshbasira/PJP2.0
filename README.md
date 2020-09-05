@@ -14,7 +14,7 @@ Note : Use JDK-11 for all Apps.
 
 ## 1. DATE CALCULATOR CORE JAVA
 
-*Mutlt lang.  and testNG not Added.
+*Multi lang.  and testNG not Added.
 
 - [Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment.pdf)
 
