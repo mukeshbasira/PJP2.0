@@ -2,12 +2,21 @@
 ===========================
 
 
+# WEEK 2,3 BATCH 5
+
+## Assignment statements
+
+- [Assignment statements](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Assignments)
+
+
+
 
 * [LINK TO PJP central (ALL weeks)](https://github.com/mukeshbasira/PJP2.0)
 
-## DATE CALCULATOR CORE JAVA
+## 1. DATE CALCULATOR CORE JAVA
 - [Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment.pdf)
 
+Simple [calculator](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/calculator) is in calculator folder.
 
 Hello, welcome to the calculator App.
 
@@ -66,7 +75,9 @@ in 5 minutes
 #### FOR TESTED EXAMPLES VISIT CALCULATOR CORE INPUT EXAMPLES FOLDER OPTION_[NAME of OPTION SELECTED] . ALL CSV OR BULK CSV FILES ARE IN CALCULATOR APP FOLDER.
 
 
-## DATE CALCULATOR PostgreSQL Hibernate Extends CORE Java app 
+## 2. DATE CALCULATOR PostgreSQL Hibernate Extends CORE Java app 
+
+visit [CALCULATOR PostgreSQL Hibernate](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/calculator_POSTGRESQL_Hibernate) folder.
 
 For learning based approach only -->> Will Run on DATA of 30 random test (MANUALLY CHANGE IT). 
 
@@ -74,7 +85,9 @@ For learning based approach only -->> Will Run on DATA of 30 random test (MANUAL
 spring.jpa.hibernate.ddl-auto=create-drop 
 ```
 
-## DATE CALCULATOR PostgreSQL SQL Extends CORE Java app (Give STATS of only Bulk Test DATA from DB from all previous sessions )
+## 3. DATE CALCULATOR PostgreSQL SQL Extends CORE Java app (Give STATS of only Bulk Test DATA from DB from all previous sessions )
+
+Visit [CALCULATOR PostgreSQL queries](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/calculator_POSTGRESQL_Queries_Stats) folder.
 
 Will RUN like core JAVA app. Its an ADD on to core java. Data will be randomly generated on User Input. And all data will be saved to local DB. 
 
@@ -86,35 +99,32 @@ Main runner will print has all the basic STATS.
 schema.sql // uncomment this file to create new DB or use as it is if DB is there
 ```
 
-#### *ALL images related to PostgreSQL can be found in IMAGES_PostgreSQL
+#### *ALL images related to PostgreSQL can be found in [IMAGES_PostgreSQL](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/%20IMAGES_PostgreSQL)
 
 
-## DATE CALCULATOR SPRING WEBAPP Extends CORE Java app
+## 4. DATE CALCULATOR SPRING WEBAPP Extends CORE Java app
 
-visit SPRING WEBAPP folder for it.
+visit [CALCULATOR SPRING WEBAPP](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Calculator%20SpringMvc%20WebApp) folder for it.
 
-## DATE CALCULATOR SPRINGBOOT REST API Extends CORE Java app (postman  screenshots)
+## 5. DATE CALCULATOR SPRINGBOOT REST API Extends CORE Java app (postman  screenshots)
 
-visit SPRINGBOOT REST API folder for it.AND Scrrenshots of postman in screenshot folder.
+visit [CALCULATOR SPRINGBOOT REST API](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Calculator%20SpringBoot%20RestAPI) folder for it.AND Scrrenshots of postman in screenshot folder.
 
+## 6. DATE CALCULATOR Servlet APP Extends CORE Java app
 
-# TRADE FEE CALCULATOR 
-Visit FEE CALCULATOR Folder. Input and output csv are there with a txt file showing a test run. 
+visit [CALCULATOR Servlet](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Calculator%20Servlet%20(jsp))  folder for it.
+
+# 7. TRADE FEE CALCULATOR 
+Visit [FEE CALCULATOR](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/FeeCalculator) Folder. Input and output csv are there with a txt file showing a test run. 
 - [TRADE FEE CALCULATOR Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment%202%20-%20Java.pdf)
 
-# CURRENCY AVG JAVA 
+# 8. CURRENCY AVG JAVA 
 
-Visit CURRENCY CALCULATOR Folder. Input and output csv are there with a txt file showing a test run. 
-
-
+Visit [CURRENCY CALCULATOR](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Currency%20Calculator) Folder. Input and output csv are there with a txt file showing a test run. 
 
 
 
-# WEEK 2 BATCH 5
 
-## JAVA DATE CALCULATOR APP
-
-- [Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment.pdf)
 
 ### Udemy Course for JAVA
 - [Core JAVA](https://www.udemy.com/course/corejavamadeeasy/?utm_source=adwords&utm_medium=udemyads&utm_campaign=Java_v.PROF_la.EN_cc.INDIA_ti.6336&utm_content=deal4584&utm_term=_._ag_81264948185_._ad_437511380830_._kw__._de_c_._dm__._pl__._ti_dsa-774930034289_._li_20468_._pd__._&matchtype=b&gclid=Cj0KCQjwp4j6BRCRARIsAGq4yMFnZ0r3p7Y5MurcShhWn-fBpqXo3v8N_C2Qw1zwyWXbK0fRHN5S8nQaApduEALw_wcB)
