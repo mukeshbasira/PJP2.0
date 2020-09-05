@@ -1,9 +1,12 @@
 | PJP2.0 weekly assignment |
 ===========================
 
-Note : Use JDK-11 for all Apps. 
+Note : 
+Use JDK-11 for all Apps. 
+
 Some of the functionalities are mixed. like (SpringBoot RestAPI has no UI as it's already done in Spring App. Swagger is added to springBoot app). :) 
-Lambda is used where it was needed (lime in optional use).
+
+Lambda is used where it was needed (like in Optional use in java).
 
 # WEEK 2,3 BATCH 5
 
