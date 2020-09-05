@@ -75,7 +75,7 @@ in 5 minutes
 #### FOR TESTED EXAMPLES VISIT CALCULATOR CORE INPUT EXAMPLES [FOLDER](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Screenshots%20SpringBOOT%20restAPI) . ALL CSV OR BULK CSV FILES ARE IN CALCULATOR APP FOLDER.
 
 
-## 2. DATE CALCULATOR PostgreSQL Hibernate Extends CORE Java app 
+## 2. DATE CALCULATOR PostgreSQL Hibernate Extends CORE DATE CALCULATOR app 
 
 visit [CALCULATOR PostgreSQL Hibernate](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/calculator_POSTGRESQL_Hibernate) folder.
 
@@ -85,7 +85,7 @@ For learning based approach only -->> Will Run on DATA of 30 random test (MANUAL
 spring.jpa.hibernate.ddl-auto=create-drop 
 ```
 
-## 3. DATE CALCULATOR PostgreSQL SQL Extends CORE Java app (Give STATS of only Bulk Test DATA from DB from all previous sessions )
+## 3. DATE CALCULATOR PostgreSQL SQL Extends CORE Java DATE CALCULATOR (Give STATS of only Bulk Test DATA from DB from all previous sessions )
 
 Visit [CALCULATOR PostgreSQL queries](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/calculator_POSTGRESQL_Queries_Stats) folder.
 
@@ -102,15 +102,15 @@ schema.sql // uncomment this file to create new DB or use as it is if DB is ther
 #### *ALL images related to PostgreSQL can be found in [IMAGES_PostgreSQL](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/%20IMAGES_PostgreSQL)
 
 
-## 4. DATE CALCULATOR SPRING WEBAPP Extends CORE Java app
+## 4. DATE CALCULATOR SPRING WEBAPP Extends CORE DATE CALCULATOR app
 
 visit [CALCULATOR SPRING WEBAPP](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Calculator%20SpringMvc%20WebApp) folder for it.
 
-## 5. DATE CALCULATOR SPRINGBOOT REST API Extends CORE Java app (postman  screenshots)
+## 5. DATE CALCULATOR SPRINGBOOT REST API Extends CORE DATE CALCULATOR app (postman  screenshots)
 
 visit [CALCULATOR SPRINGBOOT REST API](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Calculator%20SpringBoot%20RestAPI) folder for it.AND Scrrenshots of postman in screenshot folder.
 
-## 6. DATE CALCULATOR Servlet APP Extends CORE Java app
+## 6. DATE CALCULATOR Servlet APP Extends CORE DATE CALCULATOR app
 
 visit [CALCULATOR Servlet](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Calculator%20Servlet%20(jsp))  folder for it.
 
