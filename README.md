@@ -108,9 +108,9 @@ schema.sql // uncomment this file to create new DB or use as it is if DB is ther
 
 visit [CALCULATOR SPRING WEBAPP](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Calculator%20SpringMvc%20WebApp) folder for it.
 
-## 5. DATE CALCULATOR SPRINGBOOT REST API Extends CORE DATE CALCULATOR app (postman  screenshots)
+## 5. DATE CALCULATOR SPRINGBOOT REST API (Swagger) Extends CORE DATE CALCULATOR app (postman  screenshots)
 
-visit [CALCULATOR SPRINGBOOT REST API](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Calculator%20SpringBoot%20RestAPI) folder for it.AND Scrrenshots of postman in screenshot folder.
+visit [CALCULATOR SPRINGBOOT REST API](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Calculator%20SpringBoot%20RestAPI%20(Swagger%20api%20docs) folder for it.AND Scrrenshots of postman in screenshot folder.
 
 ## 6. DATE CALCULATOR Servlet APP Extends CORE DATE CALCULATOR app
 
