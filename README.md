@@ -5,7 +5,7 @@
 
 1.[WEEK 1](#WEEK-1-BATCH-5)
 
-2.[WEEK 2and3](#WEEK 2 and 3  BATCH-5)
+2.[WEEK 2and3](#WEEK-2-and-3-BATCH-5)
 
 # WEEK 1 BATCH 5
 - [WEEK1 Project](https://github.com/mukeshbasira/PJP2.0/tree/week1)
@@ -26,7 +26,7 @@
 3. [Buddy Pairs](https://www.codewars.com/kata/59ccf051dcc4050f7800008f/train/javascript)
 
 
-# WEEK 2 and 3 BATCH-5
+# WEEK 2 and 3 BATCH 5
 
 ## MAVEN
 - [Maven Project](https://github.com/mukeshbasira/PJP2.0/tree/week2_maven)
