@@ -5,7 +5,7 @@
 
 * [LINK TO PJP central (ALL weeks)](https://github.com/mukeshbasira/PJP2.0)
 
-## DATE CALCULATOR CORE JAVA
+## 1. DATE CALCULATOR CORE JAVA
 - [Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment.pdf)
 
 
@@ -66,7 +66,7 @@ in 5 minutes
 #### FOR TESTED EXAMPLES VISIT CALCULATOR CORE INPUT EXAMPLES FOLDER OPTION_[NAME of OPTION SELECTED] . ALL CSV OR BULK CSV FILES ARE IN CALCULATOR APP FOLDER.
 
 
-## DATE CALCULATOR PostgreSQL Hibernate Extends CORE Java app 
+## 2. DATE CALCULATOR PostgreSQL Hibernate Extends CORE Java app 
 
 For learning based approach only -->> Will Run on DATA of 30 random test (MANUALLY CHANGE IT). 
 
@@ -74,7 +74,7 @@ For learning based approach only -->> Will Run on DATA of 30 random test (MANUAL
 spring.jpa.hibernate.ddl-auto=create-drop 
 ```
 
-## DATE CALCULATOR PostgreSQL SQL Extends CORE Java app (Give STATS of only Bulk Test DATA from DB from all previous sessions )
+## 3. DATE CALCULATOR PostgreSQL SQL Extends CORE Java app (Give STATS of only Bulk Test DATA from DB from all previous sessions )
 
 Will RUN like core JAVA app. Its an ADD on to core java. Data will be randomly generated on User Input. And all data will be saved to local DB. 
 
@@ -89,20 +89,23 @@ schema.sql // uncomment this file to create new DB or use as it is if DB is ther
 #### *ALL images related to PostgreSQL can be found in IMAGES_PostgreSQL
 
 
-## DATE CALCULATOR SPRING WEBAPP Extends CORE Java app
+## 4. DATE CALCULATOR SPRING WEBAPP Extends CORE Java app
 
-visit SPRING WEBAPP folder for it.
+visit CALCULATOR SPRING WEBAPP folder for it.
 
-## DATE CALCULATOR SPRINGBOOT REST API Extends CORE Java app (postman  screenshots)
+## 5. DATE CALCULATOR SPRINGBOOT REST API Extends CORE Java app (postman  screenshots)
 
-visit SPRINGBOOT REST API folder for it.AND Scrrenshots of postman in screenshot folder.
+visit CALCULATOR SPRINGBOOT REST API folder for it.AND Scrrenshots of postman in screenshot folder.
 
+## 6. DATE CALCULATOR Servlet APP Extends CORE Java app
 
-# TRADE FEE CALCULATOR 
+visit CALCULATOR Servlet  folder for it.
+
+# 7. TRADE FEE CALCULATOR 
 Visit FEE CALCULATOR Folder. Input and output csv are there with a txt file showing a test run. 
 - [TRADE FEE CALCULATOR Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment%202%20-%20Java.pdf)
 
-# CURRENCY AVG JAVA 
+# 8. CURRENCY AVG JAVA 
 
 Visit CURRENCY CALCULATOR Folder. Input and output csv are there with a txt file showing a test run. 
 
