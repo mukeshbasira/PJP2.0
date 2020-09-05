@@ -9,6 +9,7 @@
 - [Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment.pdf)
 
 Simple calculator is in calculator folder.
+
 Hello, welcome to the calculator App.
 
 If you want to enter date enter it in MM/DD/YYYY format or just type a phrase as mentioned in example
