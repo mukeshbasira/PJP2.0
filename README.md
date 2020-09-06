@@ -36,9 +36,9 @@
 ### Udemy Course for maven
 1. [Maven](https://www.udemy.com/course/learn-maven-java-dependency-management-in-20-steps/ ) 
 
-## JAVA ALL Projects (FULL project)
+## JAVA ALL Projects + HTMLCSS calc app (FULL project)
 
-- [JAVA ALL Projects](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator)
+- [JAVA ALL Projects + Html calc app](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator)
 
 
 
