@@ -1,0 +1,49 @@
+pipeline {
+   agent any
+
+   tools {
+      maven "maven"
+      jdk "jdk11"
+
+   }
+
+   stages {
+
+   stage('remote') {
+      steps {
+      // Get some code from a GitHub repository (edit the below one for specific folder)
+      git 'https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator.git'
+      }
+      }
+      stage('Build') {
+         steps {
+
+            // Run Maven on a Unix agent.
+            sh "mvn -Dmaven.test.failure.ignore=true clean package"
+
+            // To run Maven on a Windows agent, use
+            // bat "mvn -Dmaven.test.failure.ignore=true clean package"
+         }
+
+         post {
+            // If Maven was able to run the tests, even if some of the test
+            // failed, record the test results and archive the jar file.
+            success {
+               junit '**/target/surefire-reports/TEST-*.xml'
+               archiveArtifacts 'target/*.jar'
+            }
+         }
+      }
+      stage('output') {
+         steps {
+             sh ' ls '
+             //choose jar name with main runner class
+            sh "java -cp target/xyz.jar PS.runner.xyz.App "
+
+
+         }}
+
+
+
+   }
+}
