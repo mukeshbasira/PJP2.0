@@ -131,7 +131,9 @@ Visit [FEE CALCULATOR](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_ca
 
 Visit [CURRENCY CALCULATOR](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Currency%20Calculator) Folder. Input and output csv are there with a txt file showing a test run. 
 
+# 9. HTML JS Calc APP
 
+[HTML JS CALC BASIC](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Calculator%20html%20JS)
 
 
 
