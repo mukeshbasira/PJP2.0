@@ -19,6 +19,7 @@ Lambda is used where it was needed (like in Optional use in java).
 
 ## 1. DATE CALCULATOR CORE JAVA
 
+[UML Diagram and Jenkins](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/UML%20%26%20Jenkins) added in UML folder.
 *Multi lang.  and testNG not Added.
 
 - [Assignment statement](https://github.com/mukeshbasira/PJP2.0/blob/week2_java_calculator/Assignments/Week%202%20Assignment.pdf)
@@ -128,6 +129,7 @@ Visit [FEE CALCULATOR](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_ca
 # 8. CURRENCY AVG JAVA 
 
 Visit [CURRENCY CALCULATOR](https://github.com/mukeshbasira/PJP2.0/tree/week2_java_calculator/Currency%20Calculator) Folder. Input and output csv are there with a txt file showing a test run. 
+
 
 
 
